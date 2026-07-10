@@ -13,6 +13,7 @@ This repo contains:
 - the Bell-witness theorem surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/PaperStatements.lean`
 - the finite operational dynamics bridge in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/OperationalDynamics.lean`
 - the concrete finite CHSH derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
+- the deterministic Bell-local envelope proof in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -62,3 +63,8 @@ The `ConcreteCHSHDerivation` module pushes one level deeper: it defines an
 explicit rational CHSH-style table and proves normalization, uniform local
 marginals, no-signaling, CHSH numerator `80`, and classical-bound gap `16`
 over denominator `32` directly from that table.
+
+The `BellLocalBound` module proves the deterministic Bell-local envelope:
+every deterministic local assignment has scaled CHSH numerator `64` or `-64`.
+The concrete table has numerator `80`, so the gap over the positive
+deterministic bound is exactly `16`.

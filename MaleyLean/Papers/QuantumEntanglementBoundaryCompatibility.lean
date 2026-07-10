@@ -1,3 +1,4 @@
 import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.Surface.Summary
 import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.OperationalDynamics
 import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.ConcreteCHSHDerivation
+import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.BellLocalBound

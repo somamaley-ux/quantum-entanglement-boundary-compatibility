@@ -1,5 +1,15 @@
 # Release Notes
 
+## v0.4.0 - deterministic Bell-local envelope
+
+This update adds the Bell-local envelope layer:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
+
+The new module proves that every deterministic local assignment has scaled
+CHSH numerator `64` or `-64`, while the concrete finite table has numerator
+`80`, giving exact positive-bound gap `16`.
+
 ## v0.3.0 - concrete finite CHSH derivation
 
 This update pushes from operational bridge to concrete derivation:

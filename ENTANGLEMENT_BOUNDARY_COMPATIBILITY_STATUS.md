@@ -51,6 +51,17 @@ It defines an explicit rational CHSH-style finite Bell table and proves:
 - the CHSH numerator is `80` over denominator `32`;
 - the classical-bound numerator is `64`, leaving exact gap `16`.
 
+## Bell-Local Envelope
+
+The deterministic Bell-local envelope module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
+
+It enumerates deterministic local assignments and proves every such assignment
+has scaled CHSH numerator `64` or `-64`. The concrete finite table therefore
+exceeds the positive deterministic Bell-local envelope by exact scaled gap
+`16`.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:
