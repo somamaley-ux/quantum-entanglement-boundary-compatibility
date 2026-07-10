@@ -62,7 +62,7 @@
 \maketitle
 
 \begin{abstract}
-This manuscript proves a kernel-role determinacy theorem for no-signaling and Bell witness fixation. It does not modify Hilbert-space quantum mechanics, derive the Born rule, introduce hidden variables, add collapse dynamics, or choose a constructive mechanism generating Bell correlations. Its claim is stronger and more precise: once Bell-type operational data are used as a non-degenerate reusable witness object, their determinacy is governed by the kernel roles of admissibility, standing, reference, and irreversibility. Quantum theory and experiment supply physical Bell correlation occurrence; the present theorem identifies the admissible same-domain normal form of Bell-witness objecthood and the terminal no-signaling endpoint---the exclusion of same-domain signal, transport, marginal-modulation, and distant-repair typings---forced by that normal form.
+This manuscript proves a kernel-role determinacy theorem for no-signaling and Bell witness fixation. It does not modify Hilbert-space quantum mechanics, derive the Born rule, introduce hidden variables, add collapse dynamics, or choose a constructive mechanism generating Bell correlations. Its claim is stronger and more precise: once Bell-type operational data are used as a non-degenerate reusable witness object, their determinacy is governed by the kernel roles of admissibility, standing, reference, and irreversibility. Quantum theory and experiment supply physical Bell correlation occurrence; the present theorem identifies the admissible same-domain normal form of Bell-witness objecthood and the terminal no-signaling endpoint---the exclusion of same-domain signal, transport, marginal-modulation, and distant-repair typings---forced by that normal form. The accompanying Lean formalization verifies a finite Bell-side spine: concrete vector geometry, vector/Born weights, structural no-signaling, CHSH violation over denominator \(32\), deterministic local response tables, finite Bell-local/hidden-variable exclusion, and the boundary/no-signaling bridge.
 
 The flagship result is no-signaling as a same-domain determinacy theorem. Given Bell-violating witness content treated as a non-degenerate Bell object, the kernel roles exclude every same-domain typing of the correlations as superluminal signal, metric transport, distant standing repair, hidden local authorizer, delayed calibration repair, or extra discriminator. On the fixed Bell scope, setting, outcome, detector, calibration, readout, and coincidence interfaces enter only through declared stable boundary traces. An entangled preparation is therefore not typed as two independently complete local standing states later connected by a mechanism, nor as a distribution over pre-assigned local values, nor as a superluminal influence. It is typed as a joint standing class carrying tensor-level compatibility constraints, sampled locally without marginal-modulation authority. The family of outcome realizations carries Bell correlation structure because local measurements realize compatible faces of one AMetrically co-standing joint class; the correlation is not produced by communication, metric transport, or distant-state repair.
 
@@ -71,12 +71,12 @@ The result is eliminative in proof method, ontic in target, and constraint-theor
 
 \begin{center}
 \fbox{\begin{minipage}{0.94\linewidth}
-\textbf{Main result.} Bell correlations may physically occur and be predicted by the ordinary quantum formalism. The present theorem concerns a different but load-bearing status: Bell-witness determinacy. If the operational table is used as the same witness-bearing object across settings, lawful relabelings, retained records, and later classification, then its objecthood is governed by admissibility, standing, reference, and irreversibility. Under those roles, entanglement has the admissible same-domain determinacy normal form of a joint standing class carrying tensor-level compatibility, and no same-domain signaling, transport, marginal-modulation, or distant-repair typing survives.
+\textbf{Main result.} Bell correlations may physically occur and be predicted by the ordinary quantum formalism. The present theorem concerns a different but load-bearing status: Bell-witness determinacy. If the operational table is used as the same witness-bearing object across settings, lawful relabelings, retained records, and later classification, then its objecthood is governed by admissibility, standing, reference, and irreversibility. Under those roles, entanglement has the admissible same-domain determinacy normal form of a joint standing class carrying tensor-level compatibility, and no same-domain signaling, transport, marginal-modulation, or distant-repair typing survives. In the finite mechanized layer, this route is witnessed by \texttt{reasonableDeepestFiniteEntanglement\_spine}, which bundles the vector/Born CHSH table, deterministic local-envelope exclusion, and boundary/no-signaling endpoint.
 \end{minipage}}
 \end{center}
 
 \paragraph{Proof-class posture.}
-AASC is used here as a constraint formalism over non-degenerate determinacy. Its nonstandard proof class is a source of the result; conventionality is not a correctness criterion. Constructive dynamics, hidden-variable completions, decoherence models, and operational derivations remain legitimate only when they meet the determinacy constraints established on the fixed Bell scope. The manuscript asks what must be true of a Bell witness if it is to function as a determinate standing object on a fixed domain. A standing objection must break a named link: target instantiation, kernel-role activation, boundary-trace discipline, joint-standing-class typing, hidden-load exhaustion, no-signaling endpoint closure, terminal classification, or the imported closure spine.
+AASC is used here as a constraint formalism over non-degenerate determinacy. Its nonstandard proof class is a source of the result; conventionality is not a correctness criterion. Constructive dynamics, hidden-variable completions, decoherence models, and operational derivations remain legitimate only when they meet the determinacy constraints established on the fixed Bell scope. The manuscript asks what must be true of a Bell witness if it is to function as a determinate standing object on a fixed domain. A standing objection must break a named link: target instantiation, kernel-role activation, boundary-trace discipline, joint-standing-class typing, hidden-load exhaustion, no-signaling endpoint closure, terminal classification, or the imported closure spine. The Lean layer should be read in this proof-class posture: it mechanizes the finite Bell-side determinacy spine and its local-envelope exclusions, not a lower-level reconstruction of quantum theory.
 
 \paragraph{Paired quantum determinacy arc.}
 This manuscript is the Bell-witness member of a paired AASC quantum determinacy arc. The companion measurement-record theorem proves that a physical record occurrence becomes non-degenerate evidential record objecthood only through admissible record-role fixation. The present theorem proves the companion result for Bell witness objecthood: physical Bell correlation occurrence becomes non-degenerate Bell-witness objecthood only through boundary-level compatibility carried by a joint standing class. Together, the two papers show that quantum record and witness determinacy are not free-standing physical occurrences; they are kernel-governed standing structures.
@@ -148,6 +148,7 @@ The live proof spine is:
 \item $\NDBell(P)\Rightarrow \Kbell(P)$.
 \item $\Kbell(P)$ together with the closure spine fixes witness interfaces and excludes second same-scope discriminators, repair, and hidden load.
 \item $|\CHSH|>2$ closes independently sufficient local standing and local value-completion on the original Bell scope.
+\item The finite mechanized Bell table is generated through concrete vector geometry and same/opposite Born weights; its CHSH numerator is \(80\) over denominator \(32\), while deterministic local response tables and denominator-32 local hidden-variable models remain inside the finite Bell-local envelope.
 \item Boundary-trace channel fixation and kernel-role closure exclude same-domain signal typing, metric-transport typing, distant-standing repair, and controllable marginal modulation.
 \item Once hidden-variable, signaling, mechanism-role reclassification, repair, non-trace-selector, and scope-transport routes are closed, $\JSC(P)\wedge\TCompat(P)$ remains together with AMetric co-standing and the no-signaling endpoint.
 \end{enumerate}
@@ -161,6 +162,8 @@ Quantum entanglement sits at the intersection of two pressures that standard phy
 The present paper takes that split as the point at which Bell-witness determinacy becomes visible. It does not choose among physical mechanisms that may generate correlations. It identifies the determinacy conditions any such account must satisfy when the Bell table is reused as the same witness across settings, relabelings, experimental records, and later classification. The distinction matters. A table of operational probabilities may physically occur as data. But a Bell witness is not merely a numerical trace. It is a standing object of comparison and reuse. If it is non-degenerate in that role, it must preserve reference, standing, admissibility, and irreversibility.
 
 The usual literature presents the Bell split in several ways. One may add hidden variables and accept Bell's no-go consequences as constraints on which such theories survive. One may add collapse or other dynamics. One may add branch structure or observer-relative bookkeeping. One may preserve operational quantum theory and treat the correlations as primitive. The present theorem does not choose among those constructive or interpretive programs. It supplies the constraint that any same-domain Bell-witness account must meet. If a proposal treats Bell data as a reusable witness object, then setting/outcome interfaces, channel roles, correlator content, no-signaling marginals, and admissible reuse must remain fixed. If a proposed mechanism, interpretation, or reconstruction violates those requirements, it does not preserve the same Bell target.
+
+The present release includes a finite Lean mechanization of this Bell-side route. It does not replace the manuscript proof, but it verifies the finite operational spine used by the theorem: a concrete vector/Born table, structural no-signaling marginals, exact CHSH numerator \(80\), deterministic local response tables, denominator-32 Bell-local/hidden-variable exclusion, and a bridge from that finite dynamics layer back to boundary-level compatibility.
 
 \paragraph{Why this target makes the kernel roles visible.}
 Bell-scope practice supplies an ideal target for the kernel roles because it displays the precise gap between physical correlation occurrence and non-degenerate witness objecthood. Quantum theory and experiment supply physical Bell correlations. The Bell witness role adds sameness across settings, stable witness-channel identity, standing-bearing reuse, and lawful reparameterization. That gap is where the kernel roles become load-bearing. Reference fixes the same witness object; standing licenses reuse as Bell evidence; admissibility separates witness-preserving transformations from hidden load and scope change; irreversibility blocks delayed calibration or post-selection from repairing the same witness act.
@@ -194,7 +197,7 @@ We work with a fixed Bell scope $\scope_{\Bell}$ containing:
     \CHSH=E_{00}+E_{01}+E_{10}-E_{11}.
     \]
 \end{enumerate}
-Bell-local theories satisfy $|\CHSH|\le 2$, while quantum theory permits violations for suitable states and settings \cite{Bell1964,CHSH1969,Brunner2014}.
+Bell-local theories satisfy $|\CHSH|\le 2$, while quantum theory permits violations for suitable states and settings \cite{Bell1964,CHSH1969,Brunner2014}. In the mechanized finite model, probabilities are represented by integer weights over denominator \(32\). The vector/Born table has CHSH numerator \(80\), corresponding to a value above the Bell-local numerator bound \(64\).
 
 \begin{definition}[Physical Bell correlation occurrence]
 A physical Bell correlation occurrence is the physical and operational occurrence of a Bell-type correlation table, including preparations, settings, outcomes, detector events, records, estimated probabilities, and no-signaling marginals. It may be supplied by ordinary quantum theory and experiment. By itself it is not yet a non-degenerate Bell witness object.
@@ -222,6 +225,14 @@ For a Bell table $P$, physical Bell correlation occurrence does not by itself im
 \begin{proof}
 Physical occurrence supplies the operational material: preparation events, detector events, setting choices, outcome records, and estimated probabilities. Bell-witness determinacy adds a standing role: the table must remain the same witness object across setting comparison, lawful re-expression, channel fixation, retained records, and later classification. A raw table may occur without fixing which channels, calibration links, readout identifications, or coincidence rules constitute the witness-bearing object. It may also occur without a standing rule distinguishing support, bookkeeping, target shift, or selector import. Hence occurrence alone does not supply non-degenerate witness determinacy.
 \end{proof}
+
+\subsection{Finite mechanized Bell-side spine}\label{subsec:leanfinitebell}
+
+The Lean companion mechanizes a finite Bell-side spine for the theorem. It uses integer weights over denominator \(32\), concrete integer plane vectors for the local axes, and a same/opposite two-outcome Born rule to generate the finite vector/Born table. The concrete vector layer proves Alice-axis squared norm \(1\), Bob-axis squared norm \(50\), and scaled vector dot products matching the finite axis profile.
+
+The finite vector/Born table has CHSH numerator \(80\). No-signaling is verified structurally for that table: for any same/opposite two-outcome cell rule, each local marginal is the same-plus-opposite sum and is therefore independent of the remote setting. This is stronger than a table-only check for the finite model, while remaining within the manuscript boundary: it is not a continuum derivation of the Born rule.
+
+The local side is mechanized explicitly. All \(16\) deterministic Alice/Bob response assignments are represented as deterministic local tables; each has CHSH numerator \(64\) or \(-64\). Denominator-32 local hidden-variable models remain inside the finite Bell-local envelope, while the vector/Born table with numerator \(80\) is outside that envelope. The named endpoint \texttt{reasonableDeepestFiniteEntanglement\_spine} bundles this finite route together with the boundary/no-signaling bridge.
 
 \subsection{Boundary traces for Bell witness channels}
 
@@ -495,6 +506,8 @@ The Bell-scope joint standing class fixes compatibility constraints, not pre-ass
 
 \begin{proof}
 A Bell-local hidden-variable model supplies local response structure indexed by $\lambda$. The joint standing class supplies equality of admitted joint observables and compatibility relations among them. It does not assign standing values to unperformed measurements. Once a context is chosen, the resulting outcome pair belongs to the compatibility structure of the admitted joint class. A value assignment is stronger than a compatibility relation. Bell's theorem excludes Bell-local value assignment for Bell-violating quantum statistics; the present classification does not reintroduce it.
+
+The Lean layer verifies the finite Bell-table version of this point. All \(16\) deterministic Alice/Bob response assignments are represented as deterministic local tables. Each such table has CHSH numerator \(64\) or \(-64\). Denominator-32 mixtures remain inside the finite local envelope, while the vector/Born table has numerator \(80\) and is outside that envelope.
 \end{proof}
 
 \begin{theorem}[Bell-local factorization is not an admissible same-scope realization]\label{thm:belllocalinadmissible}
@@ -518,7 +531,7 @@ A Bell-local hidden variable is not a new admissible same-domain asymmetry sourc
 
 \section{No-signaling endpoint: compatibility is not transport}\label{sec:nosignaling}
 
-The no-signaling endpoint depends on AMetric co-standing. The local outcomes form Bell correlations because the two local measurements realize compatible local faces of one boundary-cofixed joint class. They are not correlated by communication between independently complete local states. The numerical no-signaling equalities are part of the fixed witness input; the theorem below concerns the exclusion of same-domain signaling, transport, marginal-modulation, and distant-repair typings.
+The no-signaling endpoint depends on AMetric co-standing. The local outcomes form Bell correlations because the two local measurements realize compatible local faces of one boundary-cofixed joint class. They are not correlated by communication between independently complete local states. The numerical no-signaling equalities are part of the fixed witness input; the theorem below concerns the exclusion of same-domain signaling, transport, marginal-modulation, and distant-repair typings. In the finite mechanized layer, no-signaling is also derived structurally for the vector/Born table from same/opposite two-outcome symmetry: each local marginal is the same-plus-opposite sum, independent of the remote setting.
 
 \begin{definition}[Signaling locality]
 A Bell-scope presentation satisfies signaling locality iff the local marginals on one wing are invariant under admissible changes of measurement setting on the other wing.
@@ -802,16 +815,20 @@ For quick audit, the Bell-scope certificate is:
     \item Setting/outcome and detector interfaces enter through declared stable boundary traces.
     \item The preparation is represented by a Bell standing class $[p]_{\sim_{\Bell}}$.
     \item Bell violation closes independently sufficient local standing on the original scope.
+    \item The finite vector/Born table has CHSH numerator \(80\) over denominator \(32\).
+    \item The \(16\) deterministic local response tables have CHSH numerator \(64\) or \(-64\).
+    \item Denominator-32 local hidden-variable models cannot represent the vector/Born table.
     \item Hidden variables fail, add hidden load, or change scope.
     \item Local measurements realize compatible faces of one AMetrically co-standing joint class; they do not change the tensor.
     \item No-signaling is the terminal endpoint: AMetric co-standing yields correlation without signal, transport, marginal modulation, or distant repair.
     \item Boundary-level compatibility is the surviving same-domain determinacy normal form.
+    \item The Lean endpoint is \texttt{reasonableDeepestFiniteEntanglement\_spine}.
 \end{enumerate}
 
 \section{Boundary and non-claim guide}\label{app:nonclaims}
 The following non-claims separate proof-class-mismatched objections from correctness-relevant objections:
 \begin{enumerate}[label=(A\arabic*),leftmargin=3em]
-    \item Not a lower derivation of quantum theory: the Hilbert formalism and Born rule are used as the standard Bell carrier.
+    \item Not a lower derivation of quantum theory: the finite vector/Born layer mechanizes a Bell-side witness table and its local-envelope exclusion; it does not derive Hilbert-space quantum mechanics, the continuum Born rule, or Tsirelson's bound.
     \item Not a hidden-variable theory: the joint standing class fixes compatibility, not pre-assigned local values.
     \item No signaling or transport typing: correlation through AMetric co-standing is not communication, and tensor compatibility is not metric transport.
     \item Not a Planck-scale proposal: the AMetric boundary is pre-metric, not ultra-metric.
@@ -831,7 +848,7 @@ The following non-claims separate proof-class-mismatched objections from correct
 \end{description}
 
 \section{Reference integrity and publication notes}\label{app:refs}
-External quantum-foundations references are limited to standard Bell-scope landmarks. Internal AASC references are restricted to the closure spine and the paired measurement-record theorem. The present manuscript is the proof text; auxiliary formalizations, if supplied separately, are audit support rather than substitutes for the theorem chain stated here.
+External quantum-foundations references are limited to standard Bell-scope landmarks. Internal AASC references are restricted to the closure spine and the paired measurement-record theorem. The Lean formalization is a finite mechanized companion to the theorem chain. It verifies the Bell-side finite dynamics and local-envelope exclusion used by the manuscript, while the manuscript remains the controlling exposition of the AASC determinacy theorem.
 
 \begin{thebibliography}{99}
 \bibitem{Einstein1935} A. Einstein, B. Podolsky, and N. Rosen, ``Can quantum-mechanical description of physical reality be considered complete?'' \emph{Physical Review} 47 (1935), 777--780. DOI: 10.1103/PhysRev.47.777.

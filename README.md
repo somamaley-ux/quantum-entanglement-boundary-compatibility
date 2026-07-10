@@ -21,7 +21,7 @@ This repo contains:
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the manuscript synchronization handoff plan in `docs/entanglement_manuscript_sync_patch_plan.md`
-- the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
+- the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`, with TeX source synchronized to the derived-dynamics Lean spine
 - the exact supplied July 10 target PDF staged as `paper/quantum_entanglement_boundary_compatibility/main.pdf`
 
 ## Build
@@ -48,6 +48,11 @@ deterministic local response tables, denominator-32 convex
 Bell-local/hidden-variable exclusion, a general finite-denominator local
 envelope interface, and the bridge back to boundary compatibility and the
 no-signaling endpoint surface.
+
+Current audit posture: the Lean build and paper audit pass, and the Lean source
+scan finds no `sorry`, `admit`, or `unsafe`. The deepest derived finite spine
+reports the standard Lean `propext` dependency in equality/extensionality
+steps.
 
 ## Claim Boundary
 

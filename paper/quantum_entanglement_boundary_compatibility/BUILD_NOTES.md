@@ -4,6 +4,12 @@
 
 Built with `pdflatex`/`latexmk` under TeX Live in the container environment.
 
+The v0.8.2 manuscript-source synchronization was performed in a Windows local
+environment where no TeX engine (`pdflatex`, `xelatex`, `lualatex`, `latexmk`,
+or `tectonic`) was available on PATH or in the checked standard install
+locations. The TeX source is synchronized with the Lean repo state; rebuilding
+the PDFs requires a TeX-enabled environment.
+
 ## Commands
 
 ```bash
@@ -30,3 +36,15 @@ All 32 manuscript pages rendered successfully.
 ## Final precision build
 
 After the final precision pass, `main.pdf` and `revision_memorandum.pdf` were rebuilt with `latexmk -pdf -interaction=nonstopmode -halt-on-error`. The manuscript remains at 32 pages, and the revision memorandum is 2 pages.
+
+## Lean synchronization source pass
+
+After the v0.8.0 Lean deepening, `main.tex` and `revision_memorandum.tex` were
+updated to name `reasonableDeepestFiniteEntanglement_spine` and describe the
+verified finite Bell-side route: concrete vector geometry, vector/Born
+denominator-32 weights, structural no-signaling, CHSH numerator `80`,
+deterministic local response tables, denominator-32 Bell-local/hidden-variable
+exclusion, the general finite-denominator envelope interface, and the
+boundary/no-signaling bridge. No local PDF rebuild was possible in the Windows
+environment used for this synchronization pass because no TeX engine was
+installed.

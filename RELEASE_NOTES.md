@@ -1,5 +1,41 @@
 # Release Notes
 
+## v0.8.2 - manuscript source synchronized with derived dynamics spine
+
+This release finalizes the repo/manuscript synchronization pass after the
+v0.8.0 Lean deepening.
+
+Human-facing manuscript source under
+`paper/quantum_entanglement_boundary_compatibility/` now explicitly names the
+strongest verified Lean endpoint:
+
+`reasonableDeepestFiniteEntanglement_spine`
+
+The manuscript source now forwards the finite Bell-side mechanization truthfully
+and strongly: concrete vector geometry, vector/Born weights over denominator
+`32`, structural no-signaling from the same/opposite two-outcome rule, CHSH
+numerator `80`, deterministic local response tables with numerators `64` or
+`-64`, denominator-32 Bell-local/hidden-variable exclusion, the general
+finite-denominator local-envelope interface, and the bridge back to
+boundary-level compatibility and the no-signaling endpoint.
+
+Boundary: the Lean layer mechanizes this finite Bell-side witness spine and
+its local-envelope exclusion. It does not claim a first-principles derivation
+of Hilbert-space quantum mechanics, the continuum Born rule, Tsirelson's
+bound, experimental Bell violation, or a complete constructive physical
+mechanism for entanglement.
+
+The existing staged PDFs remain the supplied July 10 compiled artifacts. The
+TeX source is synchronized in this release; PDF rebuild was not performed in
+this local environment because no TeX engine (`pdflatex`, `xelatex`,
+`lualatex`, `latexmk`, or `tectonic`) is installed on PATH or in the checked
+standard local locations.
+
+Audit posture: `lake build MaleyLean`, the paper audit script, and the Lean
+source scan pass. The deepest derived finite spine reports the standard Lean
+`propext` dependency in equality/extensionality steps; the scan finds no
+`sorry`, `admit`, or `unsafe`.
+
 ## v0.8.1 - manuscript synchronization patch plan
 
 This release adds:

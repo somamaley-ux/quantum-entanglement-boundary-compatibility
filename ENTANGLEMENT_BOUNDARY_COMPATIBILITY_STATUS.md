@@ -122,6 +122,11 @@ value `80`, deterministic-response local envelope, denominator-32
 hidden-variable exclusion, general local-envelope interface, and the
 boundary/no-signaling bridge.
 
+Current audit posture: `lake build MaleyLean` and the paper audit script pass,
+and the Lean source scan finds no `sorry`, `admit`, or `unsafe`. The deepest
+derived finite spine reports the standard Lean `propext` dependency in
+equality/extensionality steps.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:

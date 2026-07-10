@@ -4,7 +4,7 @@
 
 **Title:** Quantum Entanglement as Boundary-Level Compatibility: A Kernel-Role Determinacy Theorem for No-Signaling, Bell Witness Fixation, and Tensor-Level Compatibility
 
-This project contains the upgraded audit-grade LaTeX manuscript and compiled PDF. It is built as Paper II of the paired AASC quantum determinacy arc:
+This project contains the upgraded audit-grade LaTeX manuscript source and the staged compiled PDF supplied with the July 10 target bundle. It is built as Paper II of the paired AASC quantum determinacy arc:
 
 1. **Measurement-record determinacy theorem:** non-degenerate evidential record objecthood requires admissible record-role fixation.
 2. **Bell-witness determinacy theorem:** non-degenerate reusable Bell-witness objecthood requires boundary-level compatibility carried by a joint standing class, with no same-domain signaling, transport, distant-repair, or marginal-modulation typing.
@@ -23,6 +23,19 @@ The final version develops the explanatory core of the Bell theorem: **AMetric c
 - `CITATION_VERIFICATION.md` - citation verification notes.
 - `BUILD_NOTES.md` - build commands and environment notes.
 - `refs.bib` - bibliography mirror for external reference management.
+
+## Lean synchronization
+
+The manuscript source is synchronized with the repo's finite Bell-side Lean
+mechanization through the endpoint
+`reasonableDeepestFiniteEntanglement_spine`. The source now explicitly records
+the verified vector/Born table over denominator `32`, CHSH numerator `80`,
+structural no-signaling, all 16 deterministic local response tables with CHSH
+numerator `64` or `-64`, denominator-32 Bell-local/hidden-variable exclusion,
+and the boundary/no-signaling bridge.
+
+The staged PDFs are the supplied July 10 compiled artifacts. After this source
+synchronization pass, PDF rebuild requires a local TeX engine.
 
 ## Build
 

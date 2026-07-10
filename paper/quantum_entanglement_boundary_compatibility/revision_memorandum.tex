@@ -30,7 +30,11 @@ This revision upgrades the manuscript into the Bell-witness member of the paired
 \item Added DOI-backed support references for the AMetric boundary and Boundary-Trace Fixation papers.
 \item Updated the conclusion and appendix certificate so no-signaling is explicitly ``correlation without communication'' through AMetric co-standing.
 \item Added the admissibility-priority clarification: ``before'' at the AMetric boundary is not temporal priority.
+\item Synchronized the manuscript with the v0.8.0 Lean formalization, including the named endpoint \texttt{reasonableDeepestFiniteEntanglement\_spine}.
 \end{enumerate}
+
+\section*{Lean synchronization}
+The manuscript is synchronized with the v0.8.0 Lean companion. The new formalization layer is \texttt{DerivedDynamics.lean}, whose strongest named endpoint is \texttt{reasonableDeepestFiniteEntanglement\_spine}. It verifies the finite Bell-side spine: concrete vector geometry, vector/Born weights, structural no-signaling, CHSH numerator \(80\), deterministic local response tables, denominator-32 Bell-local/hidden-variable exclusion, a general finite-denominator envelope interface, and the bridge back to boundary-level compatibility and the no-signaling endpoint. The Lean audit reports no \texttt{sorry}, \texttt{admit}, or \texttt{unsafe}; the deepest derived finite spine reports the standard Lean \texttt{propext} dependency in equality/extensionality steps.
 
 \section*{Support-source integration}
 The AMetric boundary source is used to support the claim that boundary-side fixation admits no metric, ordering, ranking, probability, selector, canonical representative, or transport authority at admission. The Boundary-Trace source is used to support the declared, stable, bivalent, channel-preserving trace discipline that fixes Bell witness interfaces without environmental oracle use or post-selection repair.
