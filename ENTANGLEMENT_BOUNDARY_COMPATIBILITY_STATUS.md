@@ -83,6 +83,17 @@ profile. The singlet correlation is represented as the negative axis profile,
 and the induced axis/Born weights are proved identical to the finite
 singlet/Born table and the concrete CHSH table.
 
+## Finite Vector Geometry
+
+The finite vector geometry module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteVectorGeometry.lean`
+
+It replaces bare axis labels with concrete integer 2D vectors, proves
+Alice-axis squared norm `1` and Bob-axis squared norm `50`, proves the scaled
+vector dot products match the finite axis profile, and derives the same
+axis/Born and concrete CHSH weights.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:

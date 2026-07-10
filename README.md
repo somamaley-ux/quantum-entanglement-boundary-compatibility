@@ -16,6 +16,7 @@ This repo contains:
 - the deterministic Bell-local envelope proof in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
 - the finite singlet/Born derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
 - the finite axis-geometry profile in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
+- the finite vector-geometry realization in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteVectorGeometry.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -80,3 +81,9 @@ The `FiniteGeometryProfile` module adds local measurement-axis labels and a
 scaled axis inner-product profile. The singlet correlation is the negative
 axis profile, and the resulting axis/Born weights are proved identical to the
 finite singlet/Born and concrete CHSH tables.
+
+The `FiniteVectorGeometry` module realizes the axis profile by concrete
+integer 2D vectors, proves Alice-axis squared norm `1` and Bob-axis squared
+norm `50`, proves the scaled vector dot products match the finite axis
+profile, and carries the vector/Born weights through to the concrete CHSH
+table.

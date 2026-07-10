@@ -1,5 +1,16 @@
 # Release Notes
 
+## v0.7.0 - finite vector geometry realization
+
+This update adds the finite vector-geometry layer:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteVectorGeometry.lean`
+
+The new module realizes the finite axis profile using concrete integer 2D
+vectors, proves Alice-axis squared norm `1` and Bob-axis squared norm `50`,
+proves scaled dot products match the axis profile, and derives the same
+vector/Born weights and concrete CHSH table.
+
 ## v0.6.0 - finite axis geometry profile
 
 This update adds the finite axis-geometry layer:
