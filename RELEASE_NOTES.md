@@ -1,5 +1,17 @@
 # Release Notes
 
+## v0.5.0 - finite singlet Born derivation
+
+This update adds the finite singlet/Born derivation layer:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
+
+The new module derives the concrete CHSH table from a finite singlet-style
+correlation profile with scaled numerators `+20` and `-20`, using the
+two-outcome Born cell rule. It proves the derived weights match the concrete
+CHSH table exactly, preserve normalization, preserve no-signaling marginals,
+and inherit the Bell-local envelope gap.
+
 ## v0.4.0 - deterministic Bell-local envelope
 
 This update adds the Bell-local envelope layer:

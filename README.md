@@ -14,6 +14,7 @@ This repo contains:
 - the finite operational dynamics bridge in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/OperationalDynamics.lean`
 - the concrete finite CHSH derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
 - the deterministic Bell-local envelope proof in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
+- the finite singlet/Born derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -68,3 +69,8 @@ The `BellLocalBound` module proves the deterministic Bell-local envelope:
 every deterministic local assignment has scaled CHSH numerator `64` or `-64`.
 The concrete table has numerator `80`, so the gap over the positive
 deterministic bound is exactly `16`.
+
+The `SingletBornDerivation` module derives the concrete table from a finite
+singlet/Born-style correlation profile. It uses scaled correlation numerators
+`+20` and `-20`, applies the two-outcome Born cell rule, and proves the derived
+weights match the concrete CHSH table exactly.

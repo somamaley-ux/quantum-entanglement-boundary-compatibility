@@ -62,6 +62,16 @@ has scaled CHSH numerator `64` or `-64`. The concrete finite table therefore
 exceeds the positive deterministic Bell-local envelope by exact scaled gap
 `16`.
 
+## Singlet/Born Derivation
+
+The finite singlet/Born derivation module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
+
+It defines a finite Bell-scope singlet correlation profile with scaled
+correlation numerators `+20` and `-20`, applies the two-outcome Born cell rule,
+and proves the resulting weights match the concrete CHSH table exactly.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:
