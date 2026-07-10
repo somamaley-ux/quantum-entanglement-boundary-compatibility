@@ -1,0 +1,6 @@
+name = "quantum_entanglement_boundary_compatibility"
+version = "0.1.0"
+defaultTargets = ["MaleyLean"]
+
+[[lean_lib]]
+name = "MaleyLean"

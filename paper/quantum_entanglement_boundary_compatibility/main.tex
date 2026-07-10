@@ -1,0 +1,851 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{mathtools,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\setlength{\parskip}{0.42em}
+\setlength{\parindent}{1.15em}
+\onehalfspacing
+\emergencystretch=2em
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Adm}{\mathrm{Adm}}
+\newcommand{\Stand}{\mathrm{Stand}}
+\newcommand{\RefRole}{\mathrm{Ref}}
+\newcommand{\Irr}{\mathrm{Irr}}
+\newcommand{\Ten}{\mathrm{Ten}}
+\newcommand{\Skin}{\mathrm{Skin}}
+\newcommand{\Anc}{\mathrm{Anc}}
+\newcommand{\scope}{\mathcal{S}}
+\newcommand{\HS}{\mathcal{H}}
+\newcommand{\CHSH}{\mathrm{CHSH}}
+\newcommand{\Bell}{\mathcal{B}}
+\newcommand{\ND}{\mathrm{ND}}
+\newcommand{\NDBell}{\mathrm{NDBellWitness}}
+\newcommand{\PhysBell}{\mathrm{PhysBellCorr}}
+\newcommand{\JSC}{\mathrm{JointStandingClass}}
+\newcommand{\TCompat}{\mathrm{TensorCompat}}
+\newcommand{\Real}{\mathrm{Real}}
+\newcommand{\AMCo}{\mathrm{AMCoStand}}
+\newcommand{\BCoFix}{\mathrm{BoundaryCoFix}}
+\newcommand{\FailClosed}{\mathrm{FailClosed}}
+\newcommand{\Trace}{\mathrm{Tr}}
+\newcommand{\Kbell}{K_{\Bell}}
+
+\title{Quantum Entanglement as Boundary-Level Compatibility\\
+\large A Kernel-Role Determinacy Theorem for No-Signaling, Bell Witness Fixation, and Tensor-Level Compatibility}
+\author{Amos Jay Maley}
+\date{2026}
+\hypersetup{pdftitle={Quantum Entanglement as Boundary-Level Compatibility: A Kernel-Role Determinacy Theorem for No-Signaling, Bell Witness Fixation, and Tensor-Level Compatibility}, pdfauthor={Amos Jay Maley}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This manuscript proves a kernel-role determinacy theorem for no-signaling and Bell witness fixation. It does not modify Hilbert-space quantum mechanics, derive the Born rule, introduce hidden variables, add collapse dynamics, or choose a constructive mechanism generating Bell correlations. Its claim is stronger and more precise: once Bell-type operational data are used as a non-degenerate reusable witness object, their determinacy is governed by the kernel roles of admissibility, standing, reference, and irreversibility. Quantum theory and experiment supply physical Bell correlation occurrence; the present theorem identifies the admissible same-domain normal form of Bell-witness objecthood and the terminal no-signaling endpoint---the exclusion of same-domain signal, transport, marginal-modulation, and distant-repair typings---forced by that normal form.
+
+The flagship result is no-signaling as a same-domain determinacy theorem. Given Bell-violating witness content treated as a non-degenerate Bell object, the kernel roles exclude every same-domain typing of the correlations as superluminal signal, metric transport, distant standing repair, hidden local authorizer, delayed calibration repair, or extra discriminator. On the fixed Bell scope, setting, outcome, detector, calibration, readout, and coincidence interfaces enter only through declared stable boundary traces. An entangled preparation is therefore not typed as two independently complete local standing states later connected by a mechanism, nor as a distribution over pre-assigned local values, nor as a superluminal influence. It is typed as a joint standing class carrying tensor-level compatibility constraints, sampled locally without marginal-modulation authority. The family of outcome realizations carries Bell correlation structure because local measurements realize compatible faces of one AMetrically co-standing joint class; the correlation is not produced by communication, metric transport, or distant-state repair.
+
+The result is eliminative in proof method, ontic in target, and constraint-theoretic in force. The numerical no-signaling equations are part of the fixed Bell witness set; the AASC endpoint is stronger than restating them. It proves that no admissible same-domain construction can reinterpret that witness as signal, transport, distant repair, hidden local value-completion, non-trace detector selection, global-apparatus authority, or extra-discriminator work without changing scope or importing hidden load. Once those routes are closed, the surviving same-domain determinacy normal form is boundary-level compatibility: tensor-level compatibility carried by a joint standing class and sampled locally through boundary-trace-fixed realizations. This is the Bell-witness companion to the measurement-record determinacy theorem: the record paper proves that non-degenerate evidential record objecthood requires admissible record-role fixation; the present paper proves that non-degenerate Bell-witness objecthood requires boundary-level compatibility and no-signaling under the kernel roles.
+\end{abstract}
+
+\begin{center}
+\fbox{\begin{minipage}{0.94\linewidth}
+\textbf{Main result.} Bell correlations may physically occur and be predicted by the ordinary quantum formalism. The present theorem concerns a different but load-bearing status: Bell-witness determinacy. If the operational table is used as the same witness-bearing object across settings, lawful relabelings, retained records, and later classification, then its objecthood is governed by admissibility, standing, reference, and irreversibility. Under those roles, entanglement has the admissible same-domain determinacy normal form of a joint standing class carrying tensor-level compatibility, and no same-domain signaling, transport, marginal-modulation, or distant-repair typing survives.
+\end{minipage}}
+\end{center}
+
+\paragraph{Proof-class posture.}
+AASC is used here as a constraint formalism over non-degenerate determinacy. Its nonstandard proof class is a source of the result; conventionality is not a correctness criterion. Constructive dynamics, hidden-variable completions, decoherence models, and operational derivations remain legitimate only when they meet the determinacy constraints established on the fixed Bell scope. The manuscript asks what must be true of a Bell witness if it is to function as a determinate standing object on a fixed domain. A standing objection must break a named link: target instantiation, kernel-role activation, boundary-trace discipline, joint-standing-class typing, hidden-load exhaustion, no-signaling endpoint closure, terminal classification, or the imported closure spine.
+
+\paragraph{Paired quantum determinacy arc.}
+This manuscript is the Bell-witness member of a paired AASC quantum determinacy arc. The companion measurement-record theorem proves that a physical record occurrence becomes non-degenerate evidential record objecthood only through admissible record-role fixation. The present theorem proves the companion result for Bell witness objecthood: physical Bell correlation occurrence becomes non-degenerate Bell-witness objecthood only through boundary-level compatibility carried by a joint standing class. Together, the two papers show that quantum record and witness determinacy are not free-standing physical occurrences; they are kernel-governed standing structures.
+
+\paragraph{Flagship endpoint: no-signaling without transport.}
+The central Bell-scope endpoint is not merely that quantum theory satisfies no-signaling. The numerical no-signaling equalities are fixed witness input; the theorem concerns same-domain typing. Bell-violating, no-signaling witness content cannot be admissibly typed as a signal, metric transport, distant-state repair, or hidden local authorizer on the same fixed domain. The correlations are forced into the boundary-level compatibility normal form: a joint standing class carrying tensor-level compatibility, locally sampled without marginal modulation.
+
+\paragraph{Kernel theorem and kernel roles.}
+When referring to the upstream result, this manuscript uses ``the kernel theorem.'' When describing what becomes operational on the Bell scope, it uses ``kernel roles'': admissibility, standing, reference, and irreversibility. The paper distinguishes the upstream kernel theorem from the local Bell-scope roles activated here. It shows what these roles force once Bell data are instantiated as a non-degenerate reusable witness target.
+
+\paragraph{Imported closure spine.}
+The imported closure spine is narrow. The present paper locally activates it on the Bell witness target and uses only the roles identified below.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.96\linewidth}{L{0.34\linewidth}Y}
+\toprule
+\textbf{Support source} & \textbf{Role imported here}\\
+\midrule
+Kernel theorem\newline {\scriptsize Maley, \emph{Non-Degenerate Construction and the Kernel of Admissibility}; DOI 10.5281/zenodo.19324199} & Target adequacy forces admissibility, standing, reference, and irreversibility.\\
+Claim standing\newline {\scriptsize Maley, \emph{Claim Standing and Legitimacy}; DOI 10.5281/zenodo.20312075} & Bell reports may not exceed witness role, channel fixation, quotient content, or support.\\
+Anchor/tensor/skin\newline {\scriptsize Maley, \emph{Anchor, Tensor, and Skin}; DOI 10.5281/zenodo.18678041} & Anchors fix Bell interfaces; tensors carry compatibility; skin is presentation surplus.\\
+Same-scope closure\newline {\scriptsize Maley, \emph{Closure by Exhaustion for Same-Scope Operators}; DOI 10.5281/zenodo.19183407} & No independent same-domain discriminator, hidden fifth role, or undeclared same-scope operator survives.\\
+AMetric boundary\newline {\scriptsize Maley, \emph{The AMetric Boundary as a Unique Regime-Invariant Constraint}; DOI 10.5281/zenodo.18603144} & Boundary-side fixation admits no metric, probability, ranking, selector, canonical representative, or transport authority; apparent metric instantaneousness is downstream bookkeeping.\\
+Boundary-trace fixation\newline {\scriptsize Maley, \emph{Boundary-Trace Fixation under Admissibility}; DOI 10.5281/zenodo.19988044} & Declared, stable, bivalent, channel-preserving traces fix witness-channel roles without environmental oracle use, outcome-conditioning, or post-selection repair.\\
+Singleton interior\newline {\scriptsize Maley, \emph{Unus Solus Possibilis Est}; DOI 10.5281/zenodo.18518484} & No plural same-domain admissible Bell interior remains after the target is fixed.\\
+Measurement-record companion\newline {\scriptsize Maley, \emph{Admissible Record Construction in Physically Non-Selective Quantum Regimes}} & Paired record-fixation theorem: non-degenerate record objecthood requires admissible record-role fixation.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{What the kernel roles do here.}
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{Y Y}
+\toprule
+\textbf{Without the kernel roles} & \textbf{With the kernel roles active}\\
+\midrule
+Bell correlations can be mistaken for transmitted influence. & Tensor compatibility is separated from metric transport.\\
+Bell-local hidden variables can be treated as apparently neutral completion. & Added local authorizer load is identified as hidden load or scope change.\\
+Local measurement can be misread as changing the distant tensor. & Local measurement is admissible local realization of an already admitted joint standing class.\\
+Delayed calibration or post-selection can repair an unfixed witness. & Irreversibility blocks same-act repair; later material is support, new act, declared update, or scope reset.\\
+Detector or apparatus facts can become hidden selectors. & Boundary traces must be declared, stable, bivalent, non-generative, and outcome-independent.\\
+No-signaling can look mysterious beside Bell violation. & The no-signaling endpoint excludes same-domain signal, transport, marginal-modulation, and distant-repair typings because compatibility is not an interior transport channel.\\
+Boundary compatibility can sound like a mechanism. & It is fixed as the admissible determinacy normal form of the Bell witness.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{What AASC adds to standard Bell analysis.}
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{Y Y}
+\toprule
+\textbf{Standard Bell/QM result} & \textbf{AASC determinacy endpoint}\\
+\midrule
+Quantum theory gives Bell-violating, no-signaling correlations. & No same-domain signaling, transport, distant-repair, or marginal-modulation typing is admissible.\\
+Bell-local factorization fails for Bell-violating data. & Local value-completion is not a same-domain determinacy form.\\
+Entangled states are non-factorizable. & The reusable Bell witness is a joint standing class carrying tensor-level compatibility.\\
+Local measurements yield correlated outcome records. & Local acts sample compatibility; they do not generate distant tensor content.\\
+Detector and calibration choices matter experimentally. & Witness interfaces enter standing-bearing objecthood only through declared stable boundary traces.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{Proof spine.}
+The live proof spine is:
+\begin{enumerate}[label=(\arabic*),leftmargin=2.2em]
+\item $\NDBell(P)\Rightarrow \Kbell(P)$.
+\item $\Kbell(P)$ together with the closure spine fixes witness interfaces and excludes second same-scope discriminators, repair, and hidden load.
+\item $|\CHSH|>2$ closes independently sufficient local standing and local value-completion on the original Bell scope.
+\item Boundary-trace channel fixation and kernel-role closure exclude same-domain signal typing, metric-transport typing, distant-standing repair, and controllable marginal modulation.
+\item Once hidden-variable, signaling, mechanism-role reclassification, repair, non-trace-selector, and scope-transport routes are closed, $\JSC(P)\wedge\TCompat(P)$ remains together with AMetric co-standing and the no-signaling endpoint.
+\end{enumerate}
+Thus the Bell witness is not a pair of locally complete standing states later joined by a mechanism. It is a joint standing class carrying tensor-level compatibility; the wings co-stand AMetrically as local roles of that class, locally sampled through fixed channels, with no-signaling as the terminal same-domain determinacy endpoint.
+
+\tableofcontents
+
+\section{Introduction}
+Quantum entanglement sits at the intersection of two pressures that standard physics language often treats as if they required a mechanism. On one side, the EPR argument sharpened the question whether quantum mechanics is complete by focusing on joint systems whose measurement statistics exhibit perfect correlations across incompatible bases \cite{Einstein1935}. On the other side, Bell's theorem and the CHSH formulation show that no Bell-local hidden-variable factorization reproduces the full quantum correlation structure of certain entangled states \cite{Bell1964,CHSH1969,Brunner2014}. Yet the operational formalism satisfies no-signaling constraints: the local marginal distribution on one wing does not depend on which measurement is chosen on the other \cite{Brunner2014}. The standard result is a structural split. The correlations exceed Bell-local realism, but they are not usable as superluminal communication. The flagship endpoint of the present theorem is the AASC determination of that split: Bell violation rules out independently sufficient local standing, while the kernel roles rule out same-domain signal, transport, and distant-repair typings.
+
+The present paper takes that split as the point at which Bell-witness determinacy becomes visible. It does not choose among physical mechanisms that may generate correlations. It identifies the determinacy conditions any such account must satisfy when the Bell table is reused as the same witness across settings, relabelings, experimental records, and later classification. The distinction matters. A table of operational probabilities may physically occur as data. But a Bell witness is not merely a numerical trace. It is a standing object of comparison and reuse. If it is non-degenerate in that role, it must preserve reference, standing, admissibility, and irreversibility.
+
+The usual literature presents the Bell split in several ways. One may add hidden variables and accept Bell's no-go consequences as constraints on which such theories survive. One may add collapse or other dynamics. One may add branch structure or observer-relative bookkeeping. One may preserve operational quantum theory and treat the correlations as primitive. The present theorem does not choose among those constructive or interpretive programs. It supplies the constraint that any same-domain Bell-witness account must meet. If a proposal treats Bell data as a reusable witness object, then setting/outcome interfaces, channel roles, correlator content, no-signaling marginals, and admissible reuse must remain fixed. If a proposed mechanism, interpretation, or reconstruction violates those requirements, it does not preserve the same Bell target.
+
+\paragraph{Why this target makes the kernel roles visible.}
+Bell-scope practice supplies an ideal target for the kernel roles because it displays the precise gap between physical correlation occurrence and non-degenerate witness objecthood. Quantum theory and experiment supply physical Bell correlations. The Bell witness role adds sameness across settings, stable witness-channel identity, standing-bearing reuse, and lawful reparameterization. That gap is where the kernel roles become load-bearing. Reference fixes the same witness object; standing licenses reuse as Bell evidence; admissibility separates witness-preserving transformations from hidden load and scope change; irreversibility blocks delayed calibration or post-selection from repairing the same witness act.
+
+The target is not merely taxonomic. It is a determinacy theorem: Bell-witness objecthood is kernel-governed. The surviving boundary-level compatibility normal form is not an optional interpretive gloss. It is the terminal same-domain determinacy normal form once locally sufficient standing, hidden variables, signaling, mechanism-role reclassification, repair, delayed calibration, non-trace-mediated selectors, and scope transport are closed.
+
+\paragraph{Handoff from the measurement-record theorem.}
+The companion measurement-record paper establishes the record side of the paired arc: physical record occurrence is not enough for non-degenerate evidential record objecthood; admissible record-role fixation is required. The present paper establishes the witness side: physical Bell correlation occurrence is not enough for non-degenerate Bell-witness objecthood; boundary-level compatibility carried by a joint standing class is required. The handoff is direct. Records are the retained evidential outputs through which experiments are used; Bell witnesses are the setting/outcome probability structures those records support. The same fixed-domain discipline governs both.
+
+\paragraph{Positive Bell-side explanation: AMetric co-standing.}
+An entangled preparation is admitted as one joint standing class, not as two independently complete local standing states. In physical-facing terms, the entangled preparation is the standing-bearing object, not two independent local objects plus a later connector. The two wings co-stand at the AMetric boundary in the precise admissibility sense: their tensor compatibility is fixed before metric distance, temporal order, signal transport, or propagation speed become admissibility-relevant. Here ``before'' denotes admissibility-priority, not temporal precedence. Local measurements later realize compatible local faces of that one class through declared setting/outcome interfaces. The family of realized outcome pairs carries Bell correlation structure by shared boundary-cofixed standing, not by communication.
+
+\section{Bell scope, physical occurrence, and witness determinacy}\label{sec:scope}
+
+\subsection{The fixed Bell scope}
+We work with a fixed Bell scope $\scope_{\Bell}$ containing:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+    \item a bipartite preparation represented in the standard quantum formalism by a density operator $\rho_{AB}$ on $\HS_A\otimes\HS_B$;
+    \item local measurement wings with settings $x\in X$ on side $A$ and $y\in Y$ on side $B$;
+    \item outcome variables $a\in A_x$ and $b\in B_y$;
+    \item operational joint probabilities $P(a,b\mid x,y)$ and correlators $E_{xy}$;
+    \item the no-signaling constraints
+    \[
+    \sum_b P(a,b\mid x,y)=\sum_b P(a,b\mid x,y')\quad \forall a,x,y,y',
+    \]
+    \[
+    \sum_a P(a,b\mid x,y)=\sum_a P(a,b\mid x',y)\quad \forall b,y,x,x';
+    \]
+    \item when appropriate, the CHSH expression
+    \[
+    \CHSH=E_{00}+E_{01}+E_{10}-E_{11}.
+    \]
+\end{enumerate}
+Bell-local theories satisfy $|\CHSH|\le 2$, while quantum theory permits violations for suitable states and settings \cite{Bell1964,CHSH1969,Brunner2014}.
+
+\begin{definition}[Physical Bell correlation occurrence]
+A physical Bell correlation occurrence is the physical and operational occurrence of a Bell-type correlation table, including preparations, settings, outcomes, detector events, records, estimated probabilities, and no-signaling marginals. It may be supplied by ordinary quantum theory and experiment. By itself it is not yet a non-degenerate Bell witness object.
+\end{definition}
+
+\begin{definition}[Ontic non-degenerate Bell-witness determinacy]\label{def:ndbell}
+A Bell operational table $P(a,b\mid x,y)$ has ontic non-degenerate Bell-witness determinacy, written $\NDBell(P)$, iff it functions as the same witness-bearing object under:
+\begin{enumerate}[label=(\alph*),leftmargin=2em]
+    \item stable target identity across lawful relabeling and reparameterization;
+    \item fixed setting/outcome, detector, calibration, and coincidence interfaces;
+    \item standing-bearing reuse in Bell comparison, record retention, and later classification;
+    \item admissible distinction between witness-preserving and witness-altering transformations;
+    \item act-time finality against delayed repair or post-selected channel privilege;
+    \item preservation of tensor-level compatibility content under the same Bell scope.
+\end{enumerate}
+\end{definition}
+
+\begin{proposition}[Physical occurrence is not yet Bell-witness determinacy]
+For a Bell table $P$, physical Bell correlation occurrence does not by itself imply ontic non-degenerate Bell-witness determinacy:
+\[
+\PhysBell(P)\not\Rightarrow \NDBell(P).
+\]
+\end{proposition}
+
+\begin{proof}
+Physical occurrence supplies the operational material: preparation events, detector events, setting choices, outcome records, and estimated probabilities. Bell-witness determinacy adds a standing role: the table must remain the same witness object across setting comparison, lawful re-expression, channel fixation, retained records, and later classification. A raw table may occur without fixing which channels, calibration links, readout identifications, or coincidence rules constitute the witness-bearing object. It may also occur without a standing rule distinguishing support, bookkeeping, target shift, or selector import. Hence occurrence alone does not supply non-degenerate witness determinacy.
+\end{proof}
+
+\subsection{Boundary traces for Bell witness channels}
+
+\begin{definition}[Bell boundary trace]\label{def:belltrace}
+A Bell boundary trace is a declared fixed-domain predicate
+\[
+\Trace_{Ch}:S^{ch}_{\Bell}\to\{0,1\}
+\]
+on the candidate setting/outcome interfaces, detector channels, calibration links, readout identifications, or coincidence-window identifications relevant to the Bell witness set. Its valuation is declared before Bell-scope classification, stable under lawful identity-preserving transformations of the Bell domain, bivalent, outcome-independent, and non-generative. It fixes which interfaces count as witness-bearing channels on the evaluated domain. It does not create Bell correlations, alter the Hilbert-space formalism, add detector ontology, or decide the Bell value after the fact.
+\end{definition}
+
+\begin{theorem}[No arbitrary Bell singleton trace]\label{thm:noarbitrarytrace}
+A singleton-valued predicate on candidate Bell channels fixes a Bell witness-channel role only if its trace source is independently declared as part of the Bell-domain architecture before Bell-scope classification. If the predicate is chosen after observing the data, conditioned on the Bell result, scalarized by a discretionary threshold, or introduced to privilege one channel among otherwise admissible presentations, then it is delayed repair, post-selection, hidden selector import, or scope change rather than same-domain witness fixation.
+\end{theorem}
+
+\begin{proof}
+A witness-channel trace performs admissibility-relevant anchoring work. If the source of that trace is not part of the declared Bell domain before classification, then the trace does not preserve the witness object; it selects or repairs it after the relevant act. A singleton predicate chosen after the data can always be manufactured and therefore cannot by itself carry standing. Outcome-conditioning makes the trace a desired-result selector. A scalar threshold makes boundary status metric or ranked rather than bivalent. A post-classification privilege changes the channel package on which witness identity depends. Each route violates the fixed-domain requirement that witness-preserving interfaces be declared before standing-bearing use. Hence singleton-valuedness is necessary for singular channel fixation when a trace is used, but not sufficient. The trace source must be predeclared, stable, bivalent, outcome-independent, and non-generative.
+\end{proof}
+
+\begin{theorem}[Bell boundary-trace admissibility]\label{thm:belltraceadmiss}
+Detector, setting, channel, calibration, coincidence, or apparatus facts are admissible Bell-scope anchors only when they enter as declared stable Bell boundary traces in the sense of \cref{def:belltrace}. Otherwise they are support, bookkeeping, delayed repair, hidden selector import, or scope change.
+\end{theorem}
+
+\begin{proof}
+A Bell-scope anchor must preserve the witness set rather than choose among candidate witness sets after classification has begun. Declaration blocks after-the-fact channel selection. Bivalence blocks graded channel legitimacy from functioning as a hidden metric at the boundary. Stability blocks relabeling or calibration drift from changing the target object under identity-preserving transformation. Outcome independence blocks selection of the channel because it supports a desired Bell value. Non-generativity blocks the trace from creating witness standing for itself. Failure of any condition either changes the evaluated domain, imports extra selector authority, or repairs a failed witness role as the same act. Hence only declared stable boundary traces can carry Bell-scope anchoring work.
+\end{proof}
+
+\section{Local activation of the kernel roles}\label{sec:kernelroles}
+
+\begin{definition}[Bell kernel roles]
+For a Bell witness object $P$, write
+\[
+\Kbell(P)=\{\Adm_P,\Stand_P,\RefRole_P,\Irr_P\},
+\]
+where $\Adm_P$ separates witness-preserving construction from hidden load, selector import, support-only description, and scope shift; $\Stand_P$ supplies reusable Bell-witness force; $\RefRole_P$ fixes the same witness-bearing target under lawful re-expression; and $\Irr_P$ blocks same-act repair by later calibration, post-selection, or retrospective channel privilege.
+\end{definition}
+
+\begin{proposition}[Operational reuse forces kernel-role entry on the Bell scope]\label{prop:bellkernel}
+If Bell operational data are treated as a fixed same-domain object - compared across settings, preserved under relabeling or lawful reparameterization, retained in records, and reused as the target of later classification - then the Bell scope already requires reference, admissibility, standing, and irreversibility. Therefore $\Kbell(P)$ is already active whenever $P$ has non-degenerate Bell-witness determinacy.
+\end{proposition}
+
+\begin{proof}
+Without reference, there is no stable target across setting comparisons and later reuse. Without admissibility, there is no fixed distinction between a lawful re-expression of the Bell witness and a transformation that changes the content being classified. Without standing, the table cannot function as reusable Bell evidence; every use would be a fresh unlinked trace. Without irreversibility, later channel privilege, calibration, or post-selection could retroactively repair the witness role as the same act, and the Bell object would not remain fixed at commitment. These are not optional labels. They are the roles already performed by non-degenerate witness reuse. Thus $\NDBell(P)$ forces $\Kbell(P)$.
+\end{proof}
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{L{0.21\linewidth}Y}
+\toprule
+\textbf{Kernel role} & \textbf{Bell-witness activation}\\
+\midrule
+Reference & Fixes the same operational table, setting/outcome interface, correlator family, no-signaling margins, and lawful relabeling class.\\
+Standing & Allows the Bell table to function as reusable witness content across comparison, record retention, audit, and later classification.\\
+Admissibility & Separates witness-preserving transformation from hidden-load insertion, detector-channel repair, scope shift, post-selection, and selector import.\\
+Irreversibility & Blocks delayed calibration, post-selected coincidence choice, later channel privilege, or retrospective relabeling from repairing the same witness act.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{theorem}[Ontic Bell-witness determinacy forces kernel-governed compatibility]\label{thm:ndbellkernel}
+For any Bell witness table $P$,
+\[
+\NDBell(P)\Rightarrow \Kbell(P).
+\]
+Once the closure spine is activated on that fixed scope,
+\[
+\NDBell(P)\Rightarrow \bigl(\JSC(P)\wedge \TCompat(P)\bigr)\ \vee\ \FailClosed_{\Bell}(P)
+\]
+after the terminal alternatives of hidden load, local value-completion, signaling, mechanism-role reclassification, delayed repair, non-trace selector, and scope change are closed.
+\end{theorem}
+
+\begin{proof}
+The first implication is \cref{prop:bellkernel}. With the kernel roles active, the imported closure spine supplies the fixed-domain consequences: report preservation, anchor/tensor/skin role discipline, no independent same-scope discriminator, no plural admissible interior, and no same-act repair. The Bell-specific sections below then close the terminal alternatives. Bell-local value-completion fails extensionally for Bell-violating data or imports hidden load. Same-domain signaling, transport, marginal modulation, and distant repair are unavailable because compatibility is not an interior transport channel. Mechanism-role reclassification converts tensor compatibility into causal, transport, or carrier-authorizing structure. Delayed calibration and non-trace-mediated detector appeals repair or select the witness after the fact. Scope change is not same-domain Bell-witness determinacy. Once those routes are closed, the remaining same-domain normal form is a joint standing class carrying tensor-level compatibility. If no such admissible normal form is supplied, Bell-witness determinacy fails closed rather than remaining as a weaker standing status.
+\end{proof}
+
+\begin{theorem}[Local activation of the closure spine]\label{thm:closureactivation}
+The expanded Bell packet used below is not derived from raw Bell probabilities alone. Bell-witness reuse locally activates the kernel roles; the cited closure spine then supplies the fixed-domain consequences. In particular:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+    \item report preservation follows from claim standing and legitimacy;
+    \item anchor/tensor/skin routing fixes channels, compatibility content, and presentation surplus;
+    \item same-scope operator closure excludes independent Bell discriminators and hidden fifth roles;
+    \item singleton admissible interior closure excludes plural same-domain Bell interiors;
+    \item irreversibility excludes delayed repair and same-act channel restoration.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The Bell argument does not ask the closure spine to generate Bell correlations. It asks what becomes admissible once a Bell table is used as a non-degenerate witness object. Proposition \ref{prop:bellkernel} supplies local activation. The imported closure results then govern the evaluated fragment: reports may not exceed standing support; anchor/tensor/skin discipline separates interfaces from compatibility and skin; same-scope closure rules out independent discriminators; singleton-interior closure rules out plural admissible Bell interiors; and irreversibility blocks delayed witness repair. These imported consequences are activated locally and used only at the named proof links.
+\end{proof}
+
+\begin{proposition}[Scope fixity on the Bell domain]\label{prop:scopefixity}
+Once the Bell witness set is fixed as a domain of admissible construction under identity-preserving transformation, it is not revisable by reinterpretation, weakening, narrowing, expansion, or reframing without redefinition of the domain itself. Any attempt to alter the admissibility conditions under which the same Bell witness set is used constitutes scope transport and is inadmissible as a same-domain move.
+\end{proposition}
+
+\begin{proof}
+On the present target, the Bell scope is not an optional descriptive wrapper but part of the fixed domain under which the witness set is admitted, compared, and reused. If a later move weakens, broadens, or reinterprets those conditions while claiming to classify the same Bell object, then it changes the envelope under which witness identity was fixed. The new envelope may be coherent as a new domain, but it is not a same-domain refinement of the old one. If it changes no standing-bearing use, it is bookkeeping. If it changes standing-bearing use, it imports a second classifier or scope transfer. Hence scope fixity is required for same-domain Bell determinacy.
+\end{proof}
+
+\section{Joint standing classes and tensor-level compatibility}\label{sec:jointstanding}
+
+\begin{definition}[Bell-scope standing equivalence]
+Fix $\scope_{\Bell}$. Two presentations $p,p'$ of the preparation are Bell-scope standing-equivalent, written $p\sim_{\Bell}p'$, iff they agree on all Bell-scope observables, no-signaling marginals, correlators, and admitted setting/outcome compatibility content. The quotient class
+\[
+[p]_{\sim_{\Bell}}
+\]
+is the Bell-scope standing class of the preparation.
+\end{definition}
+
+\begin{definition}[Entangled joint standing class]
+An entangled joint standing class is a Bell-scope standing class whose Bell witness set cannot be factored into a pair of independently sufficient local standing classes while preserving all admitted joint observables and no-signaling marginals.
+\end{definition}
+
+\begin{definition}[Tensor-level compatibility]
+Tensor-level compatibility is the standing-bearing quotient-level relation among admitted joint observables that is preserved by the Bell witness set but not reducible to independently sufficient local standing packages on the same Bell scope.
+\end{definition}
+
+
+\begin{definition}[Bell-scope tensor-compatibility content]\label{def:tb}
+For an admitted Bell-scope standing class $[p]_{\sim_{\Bell}}$, write $T_B=T_B([p]_{\sim_{\Bell}})$ for its Bell-scope tensor-compatibility content. This is the quotient-level standing-bearing structure that fixes, for each admitted setting pair $(x,y)$, the admissible joint realization profile and associated operational probabilities $P(a,b\mid x,y)$ while preserving the no-signaling marginals. $T_B$ is not a list of pre-existing local values, not a hidden variable, and not a deterministic assignment of an outcome pair for every unperformed setting.
+\end{definition}
+
+\begin{proposition}[Joint standing class as Bell determinacy normal form]\label{prop:jscnormal}
+Within the fixed Bell scope, the admissible determinacy normal form of an entangled preparation is a joint standing class carrying tensor-level compatibility. It is not a pair of independently complete local standing states plus later influence.
+\end{proposition}
+
+\begin{proof}
+The standing-bearing Bell data are not exhausted by the separate local marginals. Bell-violating correlations preserve joint constraints that survive lawful re-expression while failing Bell-local factorization. By anchor/tensor/skin discipline, the load-bearing content that survives quotient-level reuse is tensor content rather than skin. Because that content links admitted joint observables across settings, it is compatibility content. If one attempts to distribute that content into independently sufficient local standing classes, the resulting structure either fails Bell violation, imports hidden load, or changes scope. Thus the same-domain normal form is a joint standing class carrying tensor-level compatibility.
+\end{proof}
+
+\begin{proposition}[Independence is not a neutral default]
+Within the Bell scope, decomposition of an entangled preparation into two independently sufficient local standing classes is not a neutral starting point. It is an additional same-scope claim that must itself be licensed.
+\end{proposition}
+
+\begin{proof}
+A decomposition into independently sufficient local standing classes asserts that the Bell witness set is generated without irreducible joint tensor compatibility. That assertion changes the standing-bearing typing of the witness. If the decomposition preserves the full Bell witness set without extra load, then it merely restates the same joint tensor in skin-level form. If it introduces new content to recover Bell violation, then it adds hidden load or changes scope. No presumption of local independence survives the fixed Bell witness once Bell violation and no-signaling are held fixed.
+\end{proof}
+
+\begin{theorem}[Local standing completeness contradiction]\label{thm:localstandingcontradiction}
+Assume Bell-violating, no-signaling data on the fixed Bell scope admit a same-domain classification in which each wing carries independently sufficient local standing for the admitted settings. Then identity-preserving reuse across settings requires joint compatibility content not recoverable from those independently sufficient local standings alone. Hence independently sufficient local standing contradicts the fixed Bell witness set as a same-domain reusable object.
+\end{theorem}
+
+\begin{proof}
+If each wing carries independently sufficient local standing, then the standing-bearing contribution to each outcome pair is exhausted by wingwise authorizer content. No further joint compatibility resource may be invoked without abandoning the assumption of independent sufficiency. Reuse across the CHSH family, however, requires one Bell witness object linking the four setting pairs. Bell-violating data contain cross-setting compatibility load not recoverable from the separate local marginals and not capturable by wingwise authorizer content alone; otherwise the data would admit Bell-local standing and satisfy the Bell-local bound. Therefore either the local standing remains genuinely local and fails to recover the Bell witness, or it recovers the witness only by silently importing joint compatibility. In the latter case it is no longer independently sufficient local standing. The assumption fails on the original Bell scope.
+\end{proof}
+
+
+\begin{center}
+\fbox{\begin{minipage}{0.92\textwidth}
+\textbf{Correlation without communication.} Bell correlations arise because local measurements realize compatible faces of one AMetrically co-standing joint class. Individual outcome pairs are local realizations; the family of such realizations carries the correlation structure. The correlation is not produced by a message, influence, carrier, or repair operation between independently complete local states.
+\end{minipage}}
+\end{center}
+
+\section{AMetric co-standing and boundary co-fixation}\label{sec:costanding}
+The preceding section identified an entangled preparation with a joint standing class rather than with two independently complete local standing states. The present section spells out the determinacy structure of that claim. The two Bell wings do not first stand as independent local objects and then acquire correlation by communication. They co-stand as local roles of one admitted joint standing class. Their compatibility is fixed at the AMetric boundary before metric distance, temporal order, signal transport, or causal propagation can function as admissibility-relevant discriminators. Here and below, \emph{before} denotes admissibility-priority rather than temporal precedence: metric distance and temporal order are licensed interior descriptors downstream of boundary fixation. This use of the AMetric boundary follows the boundary theorem that no metric, order, ranking, probability, selector, canonical representative, or boundary-transmissive operation can carry admissibility-bearing authority at admission \cite{MaleyAMetricBoundary2026}.
+
+\begin{definition}[Local Bell face]\label{def:localbellface}
+Let $[p]_{\sim_{\Bell}}$ be a Bell-scope joint standing class. For a local setting $x$ on wing $A$, the $A$-local face of $[p]_{\sim_{\Bell}}$ at $x$ is the admissible role through which a local outcome $a\in A_x$ may be realized from the joint standing class through the declared setting/outcome interface on wing $A$. The $B$-local face at setting $y$ is defined analogously. A local face is not an independently sufficient local standing state. It is a local realization role of the joint class.
+\end{definition}
+
+\begin{definition}[AMetric co-standing]\label{def:ametriccostanding}
+The two wings of a Bell preparation are in AMetric co-standing iff they are admitted not as two independently complete local standing states, but as local roles of one joint standing class $[p]_{\sim_{\Bell}}$ whose tensor-level compatibility is fixed at the AMetric boundary. AMetric co-standing means that the standing-bearing compatibility of the two wings is fixed before metric distance, temporal order, signal transport, or propagation speed can function as admissibility-relevant discriminators, where before is an admissibility-priority relation rather than a temporal relation.
+\end{definition}
+
+\begin{definition}[Boundary co-fixation]\label{def:boundarycofixation}
+Boundary co-fixation is the admission-level fixation of the joint standing class and its tensor-level compatibility relation. It fixes the compatibility structure sampled by local measurements. It does not transmit information between wings, assign pre-existing local values, generate a distant state, or repair a distant state after a local act. On the Bell scope, boundary co-fixation is mediated by declared setting/outcome, detector, calibration, readout, or coincidence traces. Such traces are admissible only as declared, stable, bivalent, channel-preserving predicates inside the target domain, not as environmental oracles or post-hoc selectors \cite{MaleyBoundaryTrace2026}.
+\end{definition}
+
+\begin{definition}[Admissible realization pair]\label{def:realizationpair}
+For settings $(x,y)$ and a joint standing class $[p]_{\sim_{\Bell}}$ carrying tensor compatibility $T_B$, write
+\[
+\Real_{x,y}([p]_{\sim_{\Bell}},T_B) \subseteq A_x\times B_y
+\]
+for the class of local outcome pairs admissible as joint realizations of the boundary-cofixed compatibility structure at those settings. Membership $(a,b)\in\Real_{x,y}([p]_{\sim_{\Bell}},T_B)$ says that $a$ and $b$ are compatible local faces of the same joint standing class. The family of such realization pairs carries the Bell correlation structure. The notation does not assign pre-existing values to unperformed measurements and does not make $T_B$ a deterministic local-value selector.
+\end{definition}
+
+\begin{theorem}[AMetric co-standing yields correlation without communication]\label{thm:costandingcorr}
+Let $[p]_{\sim_{\Bell}}$ be an admitted Bell-scope joint standing class carrying tensor-level compatibility $T_B$. Suppose local measurements at settings $x$ and $y$ are admissible local realizations through declared Bell boundary traces. Then each realized pair $(a,b)$ is an admissible local realization pair for $T_B$, equivalently $(a,b)\in\Real_{x,y}([p]_{\sim_{\Bell}},T_B)$, and the family of such realization pairs carries the Bell correlation structure. $T_B$ constrains the joint realization profile in the standing-bearing compatibility sense; it does not determine pre-assigned local values for unperformed settings. The correlation arises from shared realization of the same boundary-cofixed joint standing class. It is not produced by communication, metric transport, distant-state repair, or same-scope standing transfer between independently complete local states.
+\end{theorem}
+
+\begin{proof}
+By the definition of an entangled joint standing class, the Bell-scope preparation is admitted as one standing-bearing object whose irreducible content is tensor-level compatibility. By AMetric co-standing, the local wings are not admitted as independently complete local standing states. They are local roles of the same joint standing class.
+
+The declared setting/outcome interfaces on the two wings determine how local measurements may realize representatives of that joint class. A local measurement at setting $x$ realizes an $A$-local face; a local measurement at setting $y$ realizes a $B$-local face. Because both local faces belong to the same admitted joint standing class, each admissible realization pair belongs to the joint realization profile fixed by the tensor compatibility $T_B$ carried by that class. Across the family of such realization pairs, this profile is what carries the Bell correlation structure.
+
+No communication is required for this constraint to hold. Communication would require a same-domain act on one wing to transmit standing-bearing content, modulate the distant marginal, alter the distant boundary trace, change the joint tensor after admission, or repair the standing of the distant wing. These routes are excluded by the AMetric boundary, standing conservation, boundary-trace stability, irreversibility, and the anchor/tensor/skin role discipline. Therefore the correlation structure is compatibility-realization within one boundary-cofixed standing class, not communication between two independently standing local systems.
+\end{proof}
+
+The determinacy chain is:
+\[
+\begin{aligned}
+\text{entangled preparation} &\Rightarrow [p]_{\sim_{\Bell}} \\
+&\Rightarrow \text{AMetric co-standing} \Rightarrow T_B,\\
+T_B &\Rightarrow \text{local realization profile }\Real_{x,y},\\
+\Real_{x,y} &\Rightarrow \text{Bell correlation without communication}.
+\end{aligned}
+\]
+Individual outcome pairs are local realizations of one boundary-cofixed compatibility structure; the family of realization pairs carries the Bell correlation structure. That structure is not produced by a signal passing from one wing to the other.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\textwidth}{Y Y}
+\toprule
+\textbf{Communication reading} & \textbf{AMetric co-standing reading}\\
+\midrule
+Two independently complete local systems acquire correlation by influence. & Two local roles realize one already-admitted joint standing class.\\
+A local measurement changes, completes, or repairs the distant state. & A local measurement samples a local face of the boundary-cofixed compatibility structure.\\
+Correlation appears to require metric transport or superluminal influence. & Correlation is compatibility-realization; metric transport is not part of the standing-bearing step.\\
+The distant marginal might be modulated by the local act. & The distant marginal cannot be modulated because the local act does not change the distant boundary trace or joint tensor.\\
+Apparent instantaneousness is treated as a propagation puzzle. & Apparent instantaneousness is interior metric bookkeeping over AMetric co-standing.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{remark}[Co-standing is not a hidden place]
+AMetric co-standing is not spatial coexistence at a hidden surface. It is co-standing in the admissibility sense: the local roles belong to one joint standing class before metric separation is a standing-bearing discriminator, where before means priority in admissibility order rather than earlier time. In physical-facing terms, the entangled preparation is the standing-bearing object, not two independent local objects plus a later connector. When that co-standing compatibility is later represented in spacetime coordinates, the correlation appears instantaneous only because metric representation is downstream of standing-bearing fixation.
+\end{remark}
+
+\section{Measurement as admissible local realization}\label{sec:measurement}
+
+\begin{definition}[Local measurement act]
+A local measurement act in the Bell scope is an admissible same-scope act that realizes an outcome representative relative to a chosen local measurement context on one wing of the already admitted joint standing class.
+\end{definition}
+
+\begin{theorem}[Local measurement realizes, not produces, Bell compatibility]\label{thm:localmeasurement}
+A local Bell measurement samples the AMetrically co-standing joint standing class through a fixed local context. It realizes a local face of the boundary-cofixed compatibility structure. It does not create, transmit, repair, or change tensor-level compatibility on the same scope.
+\end{theorem}
+
+\begin{proof}
+A same-scope tensor-changing operation would have to create standing, transfer standing, amplify standing, or repair incomplete standing. Standing conservation and irreversibility exclude those routes on the fixed domain. The role-discipline results also block treating tensor content as an operator or mechanism. A local measurement may generate a local outcome record, but the compatibility structure sampled by that record is not generated by the local act. The act realizes a local face inside the admitted joint standing lineage. If paired with a local act on the other wing, the realized pair belongs to the joint realization profile fixed by $T_B$ as in \cref{thm:costandingcorr}.
+\end{proof}
+
+\begin{proposition}[Local realization requires fixed witness-channel anchoring]\label{prop:localchannel}
+A local Bell measurement can realize the joint tensor only through a setting/outcome channel already fixed as part of the Bell witness domain. The local act does not determine the witness role after the fact; it samples admitted compatibility through a boundary-trace-anchored local interface.
+\end{proposition}
+
+\begin{proof}
+By \cref{thm:belltraceadmiss}, setting/outcome and detector interfaces can serve as same-domain anchors only through declared stable boundary traces. A local measurement act therefore has an admitted channel through which a representative is realized, but it has no authority to decide after the fact which channel counted as witness-bearing. If channel identity is chosen after observing the result, the move is repair or selector import. Hence local realization requires prior witness-channel anchoring.
+\end{proof}
+
+\begin{proposition}[No delayed Bell calibration repair]\label{prop:nodelayedrepair}
+Delayed calibration, post-selected detector identification, later coincidence-window choice, posterior channel privilege, or retrospective setting/outcome relabeling cannot repair Bell-scope classification on the same domain. If such material is added after witness fixation fails or after the witness role is already used, it defines a fresh Bell domain or imports an inadmissible same-scope selector.
+\end{proposition}
+
+\begin{proof}
+A calibration or coincidence rule may be legitimate when declared in advance as a stable boundary trace. If introduced later to decide which channel or data slice counts as the Bell witness, it changes the channel package on which witness identity depends. Treating the later package as if it fixed the earlier same act is same-act repair. Treating it explicitly as new declared structure is a scope reset. Neither is same-domain repair of the original Bell classification.
+\end{proof}
+
+\begin{corollary}[No same-act repair typing of collapse]
+A collapse typing that requires the local act on one wing to repair, complete, or finish an otherwise standing-incomplete distant state is inadmissible on the same Bell scope.
+\end{corollary}
+
+\begin{proof}
+Such a typing makes the distant state standing-complete only after the local act. That is same-scope repair or completion. Irreversibility and no-repair closure exclude same-act repair on the fixed domain. Therefore the typing is inadmissible as same-domain Bell classification.
+\end{proof}
+
+\paragraph{Handoff to record determinacy.}
+The local act may produce a local record occurrence. Whether that record occurrence stands as the same evidential object for retained reuse is the target of the companion measurement-record paper. The present theorem governs the witness compatibility sampled by such records; the record theorem governs the evidential standing of the records themselves.
+
+\section{Why this is not hidden variables}\label{sec:hiddenvariables}
+
+\begin{definition}[Bell-local value determinacy]
+A Bell-local value-determinacy presentation is a same-scope model assigning pre-existing local values or local response functions to the admitted measurement settings through a factorization of the form
+\[
+P(a,b\mid x,y)=\int d\lambda\,\rho(\lambda)P(a\mid x,\lambda)P(b\mid y,\lambda).
+\]
+\end{definition}
+
+\begin{proposition}[Compatibility determinacy is not local value determinacy]\label{prop:notHV}
+The Bell-scope joint standing class fixes compatibility constraints, not pre-assigned local values for all possible settings. It is therefore not a hidden-variable completion of the Bell-local type.
+\end{proposition}
+
+\begin{proof}
+A Bell-local hidden-variable model supplies local response structure indexed by $\lambda$. The joint standing class supplies equality of admitted joint observables and compatibility relations among them. It does not assign standing values to unperformed measurements. Once a context is chosen, the resulting outcome pair belongs to the compatibility structure of the admitted joint class. A value assignment is stronger than a compatibility relation. Bell's theorem excludes Bell-local value assignment for Bell-violating quantum statistics; the present classification does not reintroduce it.
+\end{proof}
+
+\begin{theorem}[Bell-local factorization is not an admissible same-scope realization]\label{thm:belllocalinadmissible}
+Suppose Bell-scope operational data are Bell-violating and no-signaling. Any same-domain realization that attempts to classify those data by Bell-local factorization must do at least one of the following:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+    \item fail extensionally by Bell's theorem;
+    \item add standing-bearing auxiliary load not licensed by the Bell witness set;
+    \item reclassify quotient-level tensor compatibility as locally distributed authorizer structure;
+    \item change scope.
+\end{enumerate}
+Hence Bell-local factorization is not an admissible same-scope determinacy normal form for Bell-violating data.
+\end{theorem}
+
+\begin{proof}
+If a standard Bell-local factorization reproduces Bell-violating data, Bell's theorem is contradicted. If the factorization is rescued by adding auxiliary structure not present in the admitted witness, that structure performs hidden standing work and is hidden load. If no auxiliary load is claimed, then the factorization can only recover the data by treating joint compatibility as if it were locally distributed authorizer content; that is a inadmissible role reclassification under anchor/tensor/skin discipline. If the proposal changes the witness object, admissibility conditions, or evaluated domain, it is scope change. These cases exhaust the same-domain factorization route.
+\end{proof}
+
+\begin{corollary}[Hidden variables as extra-domain asymmetry unless inert]
+A Bell-local hidden variable is not a new admissible same-domain asymmetry source. If it is extensionally inert, it is skin-level bookkeeping over the joint standing class. If it performs standing-bearing work not fixed by the Bell witness set, it is hidden load or scope change.
+\end{corollary}
+
+\section{No-signaling endpoint: compatibility is not transport}\label{sec:nosignaling}
+
+The no-signaling endpoint depends on AMetric co-standing. The local outcomes form Bell correlations because the two local measurements realize compatible local faces of one boundary-cofixed joint class. They are not correlated by communication between independently complete local states. The numerical no-signaling equalities are part of the fixed witness input; the theorem below concerns the exclusion of same-domain signaling, transport, marginal-modulation, and distant-repair typings.
+
+\begin{definition}[Signaling locality]
+A Bell-scope presentation satisfies signaling locality iff the local marginals on one wing are invariant under admissible changes of measurement setting on the other wing.
+\end{definition}
+
+\begin{definition}[Bell-scope signaling typing]
+A Bell-scope signaling typing is a same-domain classification under which a local setting choice, local measurement act, local outcome, or local record on one wing changes standing-bearing content on the other wing in a way that could modulate the distant marginal or carry endpoint-relevant information across the metric separation.
+\end{definition}
+
+\begin{definition}[Metric transport and distant-repair typings]
+A metric transport typing classifies Bell correlation as a carrier, signal, influence, causal process, or standing-bearing transfer between spacelike separated wings. A distant-standing repair typing classifies a local act on one wing as completing, repairing, or conferring standing on the distant wing as the same Bell-scope act.
+\end{definition}
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{L{0.36\linewidth}Y}
+\toprule
+\textbf{Reading of no-signaling} & \textbf{Status in this paper}\\
+\midrule
+Numerical marginal invariance in the operational table & Bell-scope input and witness property.\\
+Absence of controllable distant marginal modulation & Same-domain theorem from boundary-trace channel invariance.\\
+Absence of superluminal communication & Corollary of no same-domain marginal modulation.\\
+Absence of metric transport & Determinacy classification result.\\
+Boundary-level compatibility & Positive admissible normal form.\\
+Hidden-variable local completion & Excluded by Bell violation and hidden-load closure.\\
+Collapse or repair of a distant state & Excluded as same-act repair.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{lemma}[No same-domain marginal modulation]\label{lem:channelinvariance}
+On a fixed Bell domain, changing the remote setting cannot alter the local boundary trace that fixes the local setting/outcome channel. Therefore no admissible same-scope act can modulate the distant marginal by changing the distant wing's witness-channel identity, local admissibility status, or local marginal role.
+\end{lemma}
+
+\begin{proof}
+A Bell boundary trace is declared before classification and stable under lawful identity-preserving transformation. If a remote setting change altered the local trace value, local witness-channel identity would not be preserved on the same Bell domain. The remote setting would function as a channel selector. If a remote act altered the local admissibility status or marginal role, it would introduce a second same-domain discriminator or repair the witness role after the fact. Those routes violate boundary-trace admissibility, same-scope closure, and irreversibility. Hence local trace status, local admissibility status, and local marginal role remain invariant under remote setting changes on the fixed scope.
+\end{proof}
+
+\begin{theorem}[No-signaling endpoint theorem: no same-domain signaling typing]\label{thm:compatnosig}
+Let $P$ be Bell-violating witness content used as a non-degenerate Bell object on the fixed Bell scope. Under the active kernel roles and boundary-trace channel fixation, no same-domain signaling typing of $P$ is admissible. The correlations are typed as boundary-level tensor compatibility of a joint standing class, not as signal, metric transport, distant-standing repair, or marginal-modulating influence.
+\end{theorem}
+
+\begin{proof}
+A same-domain signaling typing would have to supply at least one of four forms of standing-bearing change: marginal modulation, tensor-content change after admission, distant standing repair, or a carrier transporting standing-bearing information. \Cref{lem:channelinvariance} blocks marginal modulation through witness-channel identity, local admissibility status, or local marginal role. Standing conservation blocks creation, transfer, or amplification of tensor content after admission. Irreversibility blocks distant-state repair as the same Bell-scope act. Anchor/tensor/skin role discipline blocks conversion of tensor compatibility into an undeclared carrier or mechanism. By \cref{thm:costandingcorr}, the Bell correlation structure is already accounted for as compatibility-realization within one boundary-cofixed joint standing class. A signaling or transport typing is therefore not needed to explain correlation; it would add a second same-domain standing-bearing route. The remaining same-domain description is that both local acts sample already fixed compatibility through their admitted contexts. Correlation without controllable marginal modulation, transport, or distant repair is not signaling. Therefore signaling typing is unavailable on the fixed Bell scope.
+\end{proof}
+
+\begin{corollary}[No superluminal communication as a same-domain corollary]
+Within the fixed Bell scope, an entangled correlation cannot be used as a superluminal communication channel.
+\end{corollary}
+
+\begin{proof}
+By \cref{thm:compatnosig}, no admissible local act modulates the distant marginal, transports standing-bearing content across the metric separation, or repairs distant standing as the same act. Without controllable distant modulation or transport, there is no communication channel. This is the communication-level expression of boundary-level compatibility, not a separate locality postulate.
+\end{proof}
+
+\begin{theorem}[Bell violation and no-signaling force the boundary-compatibility normal form]\label{thm:bellnosigcompat}
+On the fixed Bell scope, Bell violation together with the no-signaling endpoint forces boundary-level tensor compatibility rather than transport. Bell violation excludes independently sufficient local standing and local value-completion; no-signaling endpoint closure excludes metric transport, signaling, and distant repair; same-scope closure excludes extra discriminators. The surviving determinacy normal form is a joint standing class carrying tensor-level compatibility.
+\end{theorem}
+
+\begin{proof}
+Bell violation closes the route on which the witness is carried by independently sufficient local standing. The no-signaling endpoint theorem closes the route on which the same witness is carried by signal, transport, marginal modulation, or distant repair. The closure spine closes hidden same-scope discriminators and same-act repairs. Boundary-trace discipline fixes witness channels without allowing detector or apparatus facts to become post-hoc selectors. Once these alternatives are closed, the only remaining same-domain determinacy form is the joint-standing-class tensor-compatibility normal form.
+\end{proof}
+
+\paragraph{No-signaling as a determinacy endpoint.}
+The theorem does not derive the numerical no-signaling equations from AASC alone; those equations are part of the fixed Bell witness set. It proves the no-signaling endpoint relevant to Bell-witness determinacy: once that no-signaling witness is fixed as the evaluated object, no same-domain construction can reinterpret the correlations as signal, transport, marginal-modulating influence, or distant repair without changing scope or importing hidden load. Nonlocal correlation, formal state update, or relational bookkeeping may remain available at their proper scope; what is excluded is their same-domain typing as metric transport of standing-bearing Bell-witness content. Bell violation marks the failure of independently sufficient local standing; AMetric co-standing explains how local outcomes can nevertheless be correlated as faces of one boundary-cofixed class; no-signaling endpoint closure marks the absence of admissible standing transfer.
+
+\section{AMetric boundary and apparent instantaneousness}\label{sec:ametric}
+The standard puzzle of entanglement is not merely that correlations exist, but that they look instantaneous in metric bookkeeping. The present theorem does not posit an additional transport mechanism. It identifies where metric description enters and where it cannot do admissibility-relevant work.
+AMetric co-standing supplies the missing determinacy picture. The wings co-stand, rather than spatially coexist, at the AMetric boundary: the joint class is admitted before metric distance and temporal order become admissibility-relevant descriptors, where before marks admissibility-priority rather than temporal priority. Apparent instantaneousness is therefore the interior metric trace of boundary-cofixed compatibility, not evidence of a hidden propagating influence.
+
+\begin{theorem}[Boundary-level fixation]\label{thm:boundarylevel}
+The tensor compatibility relation carried by an entangled joint standing class is fixed at admission, and admission is governed by the AMetric boundary. Therefore the standing-bearing source of Bell correlation is fixed at a level at which metric distance and time are not admissibility-relevant.
+\end{theorem}
+
+\begin{proof}
+Standing is fixed at admission. Tensor-level compatibility, formalized here as $T_B$, is standing-bearing content of the joint class. The AMetric boundary is the closure-spine result that pre-admissible boundary status is not governed by metric distance, time, ranking, probability, selector, canonical representative, or boundary-transmissive operation \cite{MaleyAMetricBoundary2026}. Hence compatibility is fixed before interior metric descriptors can carry standing-bearing authority. Metric distance and temporal order may later describe measurement events inside the admitted domain; they do not generate the compatibility. The word ``before'' is used here in the same admissibility-priority sense as in \cref{def:ametriccostanding}.
+\end{proof}
+
+\begin{theorem}[Apparent instantaneousness is interior bookkeeping]\label{thm:instant}
+If compatibility is fixed at the AMetric boundary and later represented in a metric interior with spacelike-separated detections, then the correlation appears instantaneous from the interior point of view without any transmitted influence existing at the boundary level.
+\end{theorem}
+
+\begin{proof}
+The interior description introduces coordinates, spacetime separation, and temporal order as licensed descriptors inside an admitted regime. Those descriptors organize standing-bearing content; they do not create it. When joint compatibility is sampled at separated locations, the interior representation displays the compatibility as holding across separation. Because compatibility was not generated by interior transport, no superluminal influence is needed. Apparent instantaneousness is the metric trace of boundary-cofixed compatibility. It is the spacetime presentation of AMetric co-standing, not the trace of a signal.
+\end{proof}
+
+\begin{corollary}[The AMetric boundary is not a physical distance scale]
+Boundary-level compatibility does not identify the AMetric boundary with the Planck scale or any other interior metric cutoff.
+\end{corollary}
+
+\begin{proof}
+The AMetric boundary is defined by absence of admissibility-relevant metric structure, not by an extreme value of metric structure. A Planck-scale description is still metric and therefore interior.
+\end{proof}
+
+\section{CHSH audit and terminal Bell classification}\label{sec:chsh}
+The CHSH audit is where Bell-witness determinacy becomes visible in compact form: the witness table cannot be carried by independently sufficient local standing while preserving the same Bell object.
+
+\subsection{Input and output skins}
+The Hilbert-space presentation represents the preparation by $\rho_{AB}$ and local measurement operators. The operational presentation represents the same Bell-scope content by $P(a,b\mid x,y)$, local marginals, and correlators $E_{xy}$. The Born rule transports Hilbert presentation to operational witness table:
+\[
+P(a,b\mid x,y)=\mathrm{Tr}\bigl[\rho_{AB}(M^{A}_{a\mid x}\otimes M^{B}_{b\mid y})\bigr].
+\]
+This transport is complete for the Bell scope because the operational table is the witness object whose determinacy is under audit.
+
+\begin{proposition}[CHSH incompatibility of local standing sufficiency]\label{prop:chshstanding}
+Fix Bell-scope data with $|\CHSH|>2$ and no-signaling marginals. If outcomes on the fixed Bell scope were generated from independently sufficient local standing under identity-preserving reuse across settings, then the induced correlators would satisfy $|\CHSH|\le 2$. Therefore Bell-violating data are incompatible with locally sufficient standing on the original Bell scope.
+\end{proposition}
+
+\begin{proof}
+Independently sufficient local standing leaves no standing-bearing place for irreducible cross-setting compatibility. The correlators must be determined by wingwise standing data alone. That is the structural content of the Bell-local bound in the CHSH setting. Therefore $|\CHSH|\le 2$. Bell-violating data contradict this. To preserve the data one must import joint compatibility or hidden load. If joint compatibility is imported, local standing was not independently sufficient; if hidden load is imported, the proposal is not a same-domain local-standing classification.
+\end{proof}
+
+\begin{definition}[Terminal Bell classification classes]\label{def:terminalclasses}
+Under the fixed Bell scope, each proposal receives a terminal standing-role classification by the following priority order:
+\begin{enumerate}[label=(F\arabic*),leftmargin=2.8em]
+    \item scope change: the witness set, admissibility envelope, or standing authority is altered;
+    \item delayed repair: later calibration, coincidence choice, channel privilege, or retrospective relabeling repairs an unfixed witness;
+    \item non-trace selector: detector, apparatus, or environment facts choose the witness without a declared stable boundary trace;
+    \item hidden load: an auxiliary variable, carrier, or discriminator performs standing-bearing work not fixed by the witness;
+    \item mechanism-role reclassification: tensor compatibility is reclassified as same-scope causal, transport, signal, or carrier-authorizing structure;
+    \item global apparatus appeal: the whole apparatus is treated as authority without fixed witness-bearing channels;
+    \item boundary-compatible determinacy: the data are carried by a joint standing class with tensor-level compatibility sampled through boundary-trace-fixed local realizations.
+\end{enumerate}
+The first applicable role is the terminal classification for that proposal on the fixed Bell scope.
+\end{definition}
+
+\begin{lemma}[Terminal classification exhaustion]\label{lem:terminalexhaust}
+Every same-domain Bell-scope proposal receives a terminal standing-role classification under \cref{def:terminalclasses}.
+\end{lemma}
+
+\begin{proof}
+A proposal either preserves the witness domain or alters it. If it alters it, it is scope change. If it preserves it but relies on later channel choice or calibration, it is delayed repair. If it uses detector or apparatus facts without a declared trace, it is a non-trace selector. If it adds auxiliary standing-bearing content, it is hidden load. If it treats compatibility as mechanism, it is mechanism-role reclassification. If it appeals to the apparatus globally without specifying fixed channels, it is global apparatus authority. If none of these applies, the proposal preserves the witness through fixed interfaces without additional standing-bearing load; it is boundary-compatible determinacy. The priority order handles overlap and gives one terminal classification.
+\end{proof}
+
+\begin{theorem}[Collapse to the Bell-witness determinacy normal form]\label{thm:classcollapse}
+On the fixed Bell scope, terminal classes (F1)-(F6) are not admissible same-domain determinacy normal forms for Bell-violating, no-signaling data. Only boundary-compatible determinacy survives.
+\end{theorem}
+
+\begin{proof}
+Scope change is not same-domain Bell-witness determinacy. Delayed repair violates irreversibility. Non-trace selection violates boundary-trace admissibility. Hidden load imports a second standing-bearing discriminator. Mechanism-role reclassification violates anchor/tensor/skin role discipline by converting tensor compatibility into causal or carrier-authorizing structure. Global apparatus appeal is inert if it preserves fixed witness channels and hidden load or scope change if it does not. Therefore only boundary-compatible determinacy remains on the fixed Bell scope.
+\end{proof}
+
+\section{Bell-witness determinacy theorem}\label{sec:main}
+
+\begin{proposition}[Bell-scope classification rigidity]\label{prop:rigidity}
+Fix Bell-violating, no-signaling operational data and the closure spine on one Bell scope. If every governance-non-equivalent same-domain alternative to joint-standing-class compatibility is exhausted by hidden load, mechanism-role reclassification, repair, non-trace selector, delayed channel repair, or scope change, then no further governance-non-equivalent same-domain determinacy form remains.
+\end{proposition}
+
+\begin{proof}
+A same-domain rival either preserves the same tensor compatibility content or changes standing-bearing content. If it preserves the content, it is skin-level restatement. If it changes standing-bearing content, then by terminal exhaustion it falls into hidden load, mechanism-role reclassification, repair, non-trace selector, delayed channel repair, or scope change. Those routes are closed on the fixed Bell domain. Hence no governance-non-equivalent same-domain rival remains.
+\end{proof}
+
+\begin{theorem}[Bell-witness determinacy theorem]\label{thm:bellwitnessdet}
+Fix Bell-violating, no-signaling operational data $P(a,b\mid x,y)$ and the imported closure spine. If $P$ is used as a non-degenerate Bell witness object on the original Bell scope, then the unique admissible same-domain determinacy normal form is a joint standing class carrying tensor-level compatibility and sampled locally by boundary-trace-fixed admissible local realizations.
+\end{theorem}
+
+\begin{proof}
+By \cref{thm:ndbellkernel}, non-degenerate Bell-witness determinacy activates the kernel roles and closure spine. By \cref{prop:chshstanding}, Bell-violating data cannot be carried by independently sufficient local standing. By \cref{thm:belllocalinadmissible}, Bell-local factorization is not an admissible same-scope realization. By \cref{thm:localmeasurement}, local measurement is realization rather than tensor change. By \cref{thm:compatnosig,thm:bellnosigcompat}, same-domain signaling and transport typings are closed. By \cref{thm:noarbitrarytrace,thm:belltraceadmiss,prop:nodelayedrepair}, channel selection and delayed repair routes are closed unless they are declared stable boundary traces. By \cref{thm:classcollapse}, all terminal rivals except boundary-compatible determinacy are inadmissible on the fixed domain. Therefore the surviving normal form is the joint-standing-class tensor-compatibility classification. By \cref{prop:rigidity}, no further governance-non-equivalent same-domain determinacy form remains.
+\end{proof}
+
+\begin{corollary}[Entanglement as standing conservation at the tensor level]
+On the fixed Bell scope, entanglement is the quantum manifestation of standing conservation at the tensor level.
+\end{corollary}
+
+\begin{proof}
+Standing conservation says that same-scope operations do not create, amplify, transfer, or repair standing. Bell correlations are sampled locally without signaling, transport, or local value-completion. The standing-bearing object carrying these facts is the conserved joint tensor compatibility of the entangled standing class. Hence entanglement is standing conservation at tensor level.
+\end{proof}
+
+\section{Mechanism constraint and paired handoff}\label{sec:handoff}
+The present theorem does not choose a constructive mechanism for Bell-correlation generation; it constrains every same-domain account that claims Bell-witness determinacy. A candidate mechanism, interpretation, or reconstruction must preserve Bell-witness identity, declared channel fixation, no-signaling marginals, tensor-level compatibility, lawful redescription, act-time finality, and the absence of hidden selector, delayed repair, and scope transport. If it does not, it is not a same-domain account of the Bell witness.
+
+\begin{proposition}[Mechanism-to-terminal-role discipline]
+Any proposed physical, dynamical, ontic, environmental, detector-channel, boundary, Everettian, or interpretive mechanism claimed to account for Bell-witness determinacy must occupy one of the terminal roles of \cref{def:terminalclasses}. If it preserves non-degenerate same-domain Bell-witness objecthood, it must reduce to boundary-compatible determinacy or declare a new scope. If it changes standing while fitting no terminal role, it is hidden selector import or same-act repair.
+\end{proposition}
+
+\begin{proof}
+A proposed mechanism matters to the Bell theorem only if it changes or preserves standing-bearing witness content. If it changes the witness object or admissibility envelope, it is scope change. If it uses later channel privilege, it is delayed repair. If it selects without trace, it is non-trace selector. If it adds auxiliary standing-bearing content, it is hidden load. If it treats tensor compatibility as transport or mechanism, it is mechanism-role reclassification. If it appeals globally to apparatus without channel fixation, it is global apparatus authority. If none applies, it preserves the witness through boundary-trace-fixed interfaces and joint tensor compatibility. The terminal list is exhaustive.
+\end{proof}
+
+\paragraph{Record determinacy and Bell-witness determinacy.}
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{Y Y}
+\toprule
+\textbf{Measurement-record theorem} & \textbf{Bell-witness theorem}\\
+\midrule
+Record-bearing construction token $d$. & Bell witness table $P(a,b\mid x,y)$.\\
+Physical record occurrence. & Physical Bell correlation occurrence.\\
+Ontic non-degenerate record determinacy. & Ontic non-degenerate Bell-witness determinacy.\\
+Record-role fixation. & Witness-channel and compatibility fixation.\\
+Measurement-record quotient $ARef/\!\approx_{MR}$. & Bell standing class $[p]_{\sim_{\Bell}}$.\\
+Boundary trace for record role. & Boundary trace for setting/outcome/detector channel.\\
+Record standing. & Witness standing.\\
+Assignment-relative record failure. & Hidden-load, repair, non-trace selector, or scope-change failure.\\
+Boundary-trace normal form. & Boundary-level tensor-compatibility normal form.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The record paper governs how measurement outcomes can stand as evidential records. The present paper governs how the witness structure sampled by such records can stand as a reusable Bell object. A later constructive dynamics, collapse theory, hidden-variable enrichment, Everettian restriction, or physical selection account must satisfy both: record determinacy must be fixed, and Bell-witness compatibility must not be retyped as hidden values, signaling, repair, or undeclared mechanism.
+
+\section{Scope, nonclaims, and denial burden}\label{sec:scope2}
+
+\subsection{What the theorem establishes}
+The manuscript establishes:
+\begin{enumerate}[label=(\arabic*),leftmargin=2em]
+    \item physical Bell correlation occurrence is distinct from non-degenerate Bell-witness determinacy;
+    \item Bell-witness determinacy activates admissibility, standing, reference, and irreversibility;
+    \item Bell channels require declared boundary-trace fixation;
+    \item entangled preparations have the admissible same-domain normal form of joint standing classes carrying tensor-level compatibility;
+    \item local measurement realizes rather than produces or transmits compatibility;
+    \item no same-domain signaling, transport, distant-repair, or marginal-modulation typing is admissible;
+    \item no further governance-non-equivalent same-domain determinacy form remains after terminal exhaustion.
+\end{enumerate}
+
+\subsection{What the theorem does not claim}
+The manuscript does not claim:
+\begin{enumerate}[label=(\arabic*),leftmargin=2em]
+    \item to derive Hilbert-space quantum mechanics, the Born rule, or Tsirelson's bound from AASC;
+    \item to add hidden variables, collapse dynamics, or superluminal influence;
+    \item to choose among physical mechanisms generating Bell correlations;
+    \item to deny the physical occurrence of Bell correlations;
+    \item to deny broader cross-scope theories, provided they are declared as new domains;
+    \item to make new empirical predictions beyond the standard Bell-scope data.
+\end{enumerate}
+These statements mark the proof class; conventionality is not a correctness criterion. The theorem is a kernel-role determinacy theorem for Bell-witness objecthood.
+
+\subsection{Correctness-relevant denial targets}
+A same-mode objection must do at least one of the following:
+\begin{enumerate}[label=(D\arabic*),leftmargin=3em]
+    \item deny that Bell witness reuse instantiates a non-degenerate target;
+    \item preserve Bell-witness determinacy while removing reference;
+    \item preserve Bell-witness determinacy while removing standing;
+    \item preserve Bell-witness determinacy while removing admissibility;
+    \item preserve Bell-witness determinacy while removing irreversibility;
+    \item show that Bell-violating, no-signaling data admit independently sufficient local standing on the original scope;
+    \item show that hidden variables add no hidden load while doing standing-bearing work;
+    \item show that local measurement changes tensor compatibility without creation, transfer, amplification, or repair of standing;
+    \item show that a non-trace detector or apparatus selector preserves the same Bell witness;
+    \item show that a broader theory preserves the original Bell target rather than changing scope;
+    \item break a named imported closure-spine result.
+\end{enumerate}
+A request for a conventional mechanism or a different proof class becomes correctness-relevant only when it is converted into one of these denial targets.
+
+\section{Conclusion}\label{sec:conclusion}
+This paper proves a kernel-role determinacy theorem for entanglement on the Bell scope. It does not propose a new quantum theory or choose among physical mechanisms generating Bell correlations; it constrains any same-domain account that claims Bell-witness determinacy. It proves that when Bell-type operational data are used as a non-degenerate reusable witness object, the objecthood of that witness is governed by the kernel roles. Once those roles are active, Bell-local hidden-variable completion, same-domain signaling, metric transport, distant repair, local mechanism, delayed calibration, non-trace selector, global apparatus authority, and scope-transport routes do not remain as same-domain determinacy normal forms.
+
+The flagship consequence is no-signaling as a determinacy endpoint. Bell correlations are stronger than independently sufficient local standing permits, yet they do not form a communication channel because the standing-bearing compatibility is not metric transport. Bell correlations arise because local outcomes are realization pairs of one AMetrically co-standing joint class. They are not produced by a message, influence, carrier, or repair operation between independently complete local states. Apparent instantaneousness is the metric trace of boundary-cofixed compatibility. AMetric co-standing is the positive determinacy structure behind the no-signaling endpoint: correlation without communication.
+
+This result pairs with the measurement-record determinacy theorem. The measurement paper proves that physical record occurrence becomes non-degenerate evidential record objecthood only through admissible record-role fixation. The present paper proves that physical Bell correlation occurrence becomes non-degenerate Bell-witness objecthood only through boundary-level compatibility carried by a joint standing class. Together, the two papers identify the kernel-governed determinacy structure of quantum record and witness use.
+
+A future constructive dynamics, collapse theory, hidden-variable enrichment, Everettian restriction, or physical-selection account must satisfy both sides of that paired structure. It must fix record determinacy, and it must not retype Bell-witness compatibility as hidden local values, signaling, same-scope repair, or undeclared mechanism. That is the force of the AASC proof class: not apology for nonstandardness, but determination of the admissibility conditions under which quantum records and witnesses can be non-degenerate objects at all.
+
+\appendix
+
+\section{Paired quantum determinacy ledger}\label{app:paired}
+The measurement-record paper and the present Bell-scope paper share a fixed-domain structure without sharing the same target theorem. In the measurement paper, record-role fixation is required before a record can serve as a standing evidential anchor. In the present paper, Bell-witness fixation is required before a probability table, setting/outcome interface, and tensor-compatibility structure can serve as a reusable Bell witness.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{0.95\linewidth}{L{0.24\linewidth}Y Y}
+\toprule
+\textbf{Shared constraint} & \textbf{Measurement record} & \textbf{Bell witness}\\
+\midrule
+Non-degenerate target & Same evidential record object. & Same Bell witness object.\\
+Physical occurrence & Branch-local or detector-local record. & Bell correlation table and local records.\\
+Fixation burden & Record-bearing role fixed for construction token. & Setting/outcome and channel role fixed for witness table.\\
+Standing object & Measurement-record quotient $ARef/\!\approx_{MR}$. & Bell standing class $[p]_{\sim_{\Bell}}$.\\
+Boundary trace & Record role trace. & Setting/outcome, detector, calibration, or coincidence trace.\\
+Residual normal form & Boundary-trace record fixation. & Boundary-level tensor compatibility.\\
+Failure mode & Assignment-relative or fail-closed record use. & Hidden-load, repair, selector, or scope-change Bell typing.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Bell-scope certificate in one page}\label{app:certificate}
+For quick audit, the Bell-scope certificate is:
+\begin{enumerate}[label=(\arabic*),leftmargin=2em]
+    \item The admitted witness set is the no-signaling table $P(a,b\mid x,y)$ and its correlators.
+    \item Physical Bell correlation occurrence is not yet Bell-witness determinacy.
+    \item Non-degenerate Bell-witness determinacy activates admissibility, standing, reference, and irreversibility.
+    \item Setting/outcome and detector interfaces enter through declared stable boundary traces.
+    \item The preparation is represented by a Bell standing class $[p]_{\sim_{\Bell}}$.
+    \item Bell violation closes independently sufficient local standing on the original scope.
+    \item Hidden variables fail, add hidden load, or change scope.
+    \item Local measurements realize compatible faces of one AMetrically co-standing joint class; they do not change the tensor.
+    \item No-signaling is the terminal endpoint: AMetric co-standing yields correlation without signal, transport, marginal modulation, or distant repair.
+    \item Boundary-level compatibility is the surviving same-domain determinacy normal form.
+\end{enumerate}
+
+\section{Boundary and non-claim guide}\label{app:nonclaims}
+The following non-claims separate proof-class-mismatched objections from correctness-relevant objections:
+\begin{enumerate}[label=(A\arabic*),leftmargin=3em]
+    \item Not a lower derivation of quantum theory: the Hilbert formalism and Born rule are used as the standard Bell carrier.
+    \item Not a hidden-variable theory: the joint standing class fixes compatibility, not pre-assigned local values.
+    \item No signaling or transport typing: correlation through AMetric co-standing is not communication, and tensor compatibility is not metric transport.
+    \item Not a Planck-scale proposal: the AMetric boundary is pre-metric, not ultra-metric.
+    \item Not a physical surface: boundary-level compatibility denotes admissibility-level fixation, not a hidden substrate.
+    \item Not a transport-mechanism theory: tensor content is not an influence, operation, or execution process; any constructive mechanism must satisfy the Bell-witness determinacy constraints.
+    \item Not detector ontology: boundary traces fix witness-channel roles; they are not new detector dynamics.
+    \item Physics-facing status: any physical mechanism claiming Bell-witness determinacy must satisfy these constraints.
+\end{enumerate}
+
+
+\section{Co-standing glossary}\label{app:costandingglossary}
+\begin{description}[leftmargin=2.8em,style=nextline]
+    \item[AMetric co-standing.] The status of Bell wings admitted as local roles of one joint standing class whose tensor compatibility is fixed before metric distance, temporal order, signal transport, or propagation speed are admissibility-relevant, where before means admissibility-priority rather than temporal precedence.
+    \item[Boundary co-fixation.] The admission-level fixation of the joint standing class and its tensor compatibility relation. It fixes what local measurements sample without assigning pre-existing local values or repairing distant standing.
+    \item[Local Bell face.] A setting-relative local realization role of the joint standing class. A local face is not an independently sufficient local standing state.
+    \item[Correlation without communication.] The family of local realization pairs carries Bell correlation structure because both wings realize compatible local faces of one boundary-cofixed joint class. No signal, metric carrier, or same-act repair is involved.
+\end{description}
+
+\section{Reference integrity and publication notes}\label{app:refs}
+External quantum-foundations references are limited to standard Bell-scope landmarks. Internal AASC references are restricted to the closure spine and the paired measurement-record theorem. The present manuscript is the proof text; auxiliary formalizations, if supplied separately, are audit support rather than substitutes for the theorem chain stated here.
+
+\begin{thebibliography}{99}
+\bibitem{Einstein1935} A. Einstein, B. Podolsky, and N. Rosen, ``Can quantum-mechanical description of physical reality be considered complete?'' \emph{Physical Review} 47 (1935), 777--780. DOI: 10.1103/PhysRev.47.777.
+\bibitem{Bell1964} J. S. Bell, ``On the Einstein Podolsky Rosen paradox,'' \emph{Physics Physique Fizika} 1 (1964), 195--200. DOI: 10.1103/PhysicsPhysiqueFizika.1.195.
+\bibitem{CHSH1969} J. F. Clauser, M. A. Horne, A. Shimony, and R. A. Holt, ``Proposed experiment to test local hidden-variable theories,'' \emph{Physical Review Letters} 23 (1969), 880--884. DOI: 10.1103/PhysRevLett.23.880.
+\bibitem{Brunner2014} N. Brunner, D. Cavalcanti, S. Pironio, V. Scarani, and S. Wehner, ``Bell nonlocality,'' \emph{Reviews of Modern Physics} 86 (2014), 419--478. DOI: 10.1103/RevModPhys.86.419.
+\bibitem{MaleyKernel2026} A. J. Maley, \emph{Non-Degenerate Construction and the Kernel of Admissibility}. Zenodo, 2026. DOI: 10.5281/zenodo.19324199.
+\bibitem{MaleyClaimStanding2026} A. J. Maley, \emph{Claim Standing and Legitimacy}. Zenodo, 2026. DOI: 10.5281/zenodo.20312075.
+\bibitem{MaleyATS2026} A. J. Maley, \emph{Anchor, Tensor, and Skin: A Fixed-Domain Decomposition Theorem for Admissible Description}. Zenodo, 2026. DOI: 10.5281/zenodo.18678041.
+\bibitem{MaleySameScope2026} A. J. Maley, \emph{Closure by Exhaustion for Same-Scope Operators under Admissibility}. Zenodo, 2026. DOI: 10.5281/zenodo.19183407.
+\bibitem{MaleyUnus2026} A. J. Maley, \emph{Unus Solus Possibilis Est}. Zenodo, 2026. DOI: 10.5281/zenodo.18518484.
+\bibitem{MaleyAMetricBoundary2026} A. J. Maley, \emph{The AMetric Boundary as a Unique Regime-Invariant Constraint on Admissibility-Bearing Construction}. Zenodo, 2026. DOI: 10.5281/zenodo.18603144.
+\bibitem{MaleyBoundaryTrace2026} A. J. Maley, \emph{Boundary-Trace Fixation under Admissibility}. Zenodo, 2026. DOI: 10.5281/zenodo.19988044.
+\bibitem{MaleyRecord2026} A. J. Maley, \emph{Admissible Record Construction in Physically Non-Selective Quantum Regimes: A Kernel-Role Determinacy Theorem for Record Fixation, Fixed-Domain Quotients, and Boundary-Trace Normal Form}. Companion manuscript, 2026.
+\end{thebibliography}
+
+\end{document}
