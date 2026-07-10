@@ -12,6 +12,7 @@ This repo contains:
 
 - the Bell-witness theorem surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/PaperStatements.lean`
 - the finite operational dynamics bridge in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/OperationalDynamics.lean`
+- the concrete finite CHSH derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -56,3 +57,8 @@ Born-style joint distribution, stable no-signaling marginals, and local
 realization of a joint profile. The bridge theorem then shows that such a
 model instantiates the existing boundary-compatibility and no-signaling
 endpoint surface.
+
+The `ConcreteCHSHDerivation` module pushes one level deeper: it defines an
+explicit rational CHSH-style table and proves normalization, uniform local
+marginals, no-signaling, CHSH numerator `80`, and classical-bound gap `16`
+over denominator `32` directly from that table.

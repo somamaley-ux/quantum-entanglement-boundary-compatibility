@@ -1,5 +1,15 @@
 # Release Notes
 
+## v0.3.0 - concrete finite CHSH derivation
+
+This update pushes from operational bridge to concrete derivation:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
+
+The new module defines an explicit rational CHSH-style finite Bell table and
+proves normalization, uniform no-signaling marginals, CHSH numerator `80`,
+and classical-bound gap `16` over denominator `32` directly from the table.
+
 ## v0.2.0 - finite operational dynamics bridge
 
 This update adds the first deeper-dynamics layer:

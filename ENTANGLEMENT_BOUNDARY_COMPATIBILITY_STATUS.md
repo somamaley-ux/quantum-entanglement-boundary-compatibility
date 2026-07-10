@@ -38,6 +38,19 @@ setting/outcome channels, and local realization of a joint profile.
 The bridge theorem proves that a ready operational model instantiates the
 existing boundary-level compatibility and no-signaling endpoint surface.
 
+## Concrete Finite Derivation
+
+The concrete derivation module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
+
+It defines an explicit rational CHSH-style finite Bell table and proves:
+
+- every setting pair has normalized joint weight;
+- Alice and Bob marginals are uniform and no-signaling;
+- the CHSH numerator is `80` over denominator `32`;
+- the classical-bound numerator is `64`, leaving exact gap `16`.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:
