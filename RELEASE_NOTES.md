@@ -1,5 +1,32 @@
 # Release Notes
 
+## v0.2.0 - finite operational dynamics bridge
+
+This update adds the first deeper-dynamics layer:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/OperationalDynamics.lean`
+
+The new module records a finite Bell operational model with tensor
+preparation, local measurement families, Born-style joint distribution,
+normalized joint weights, stable no-signaling marginals, Bell-witness
+violation, stable setting/outcome channels, and local realization of a joint
+profile.
+
+The bridge theorem shows that such an operational model instantiates the
+existing boundary-level compatibility and no-signaling endpoint surface.
+
+New audit endpoints:
+
+- `PaperFiniteOperationalDynamicsProducesBellOccurrenceStatement`
+- `PaperFiniteOperationalDynamicsProducesNDBellWitnessStatement`
+- `PaperBornProfileForcesTensorCompatibilityStatement`
+- `PaperNoSignalingMarginalsForbidMarginalModulationStatement`
+- `PaperTensorPreparationGivesJointStandingStatement`
+- `PaperOperationalDynamicsBoundaryCompatibilityStatement`
+- `PaperOperationalDynamicsNoSignalingEndpointStatement`
+- `PaperOperationalDynamicsInstantiatesBellWitnessSurfaceStatement`
+- `PaperOperationalDynamicsKernelCertificateStatement`
+
 ## v0.1.0 - Entanglement boundary compatibility audit
 
 Initial standalone release for:

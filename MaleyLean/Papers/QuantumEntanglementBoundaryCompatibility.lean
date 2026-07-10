@@ -1,1 +1,2 @@
 import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.Surface.Summary
+import MaleyLean.Papers.QuantumEntanglementBoundaryCompatibility.OperationalDynamics

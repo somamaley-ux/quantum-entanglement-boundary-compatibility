@@ -24,6 +24,20 @@ It records the paper-facing route:
   delayed-calibration repair, and extra-discriminator typings;
 - lack of boundary-level compatibility is fail-closed for the same target.
 
+## Operational Dynamics Layer
+
+The dynamics bridge module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/OperationalDynamics.lean`
+
+It adds a finite Bell operational model with a Bell table, tensor preparation,
+local measurement families, Born-style joint distribution, normalized joint
+weights, stable no-signaling marginals, Bell-witness violation, stable
+setting/outcome channels, and local realization of a joint profile.
+
+The bridge theorem proves that a ready operational model instantiates the
+existing boundary-level compatibility and no-signaling endpoint surface.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:
@@ -37,7 +51,7 @@ The staged `main.pdf` is the exact supplied July 10 target PDF from:
 ## Claim Boundary
 
 This is an audit/formal-routing surface over declared structures and
-hypotheses. It refines the public AASC kernel/admissibility story at the
-Bell-witness endpoint; it does not claim a first-principles derivation of
-quantum mechanics, Bell violation, the Born rule, or a constructive physical
-mechanism for entanglement.
+hypotheses, now including a finite operational dynamics bridge. It refines the
+public AASC kernel/admissibility story at the Bell-witness endpoint; it does
+not claim a first-principles derivation of quantum mechanics, Bell violation,
+the Born rule, or a complete constructive physical mechanism for entanglement.
