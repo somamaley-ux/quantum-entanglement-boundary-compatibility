@@ -1,5 +1,41 @@
 # Release Notes
 
+## v0.8.3 - Bell-nonlocal v0.19.0 manuscript snapshot
+
+This update stages the supplied hardened manuscript package under the new title:
+
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility`
+
+Full manuscript title:
+
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility: A Kernel-Role Determinacy Theorem for Bell-Witness Fixation, No-Signaling, and Tensor-Level Compatibility`
+
+The staged paper bundle under
+`paper/quantum_entanglement_boundary_compatibility/` now contains the v0.19.0
+correctness-closure package: manuscript source, supplied compiled PDF,
+revision memorandum, theorem-status map, Lean synchronization ledger, imported
+theorem specialization ledger, governance representation ledger, referee
+hardening ledger, package checksums, QA records, and release notes.
+
+The v0.19.0 manuscript layer separates act-support equality from typed support
+value, restricts canonical compatibility continuation to the active relation,
+distinguishes target preservation from governance-inert skin in the retyping
+proof, and completes metric-authority exclusion through semantic effect
+exhaustion and second-invariant closure.
+
+Lean boundary: no new Lean theorem is claimed by this manuscript snapshot. The
+released Lean companion remains controlled by
+`reasonableDeepestFiniteEntanglement_spine`, which verifies the finite
+denominator-32 Bell carrier, vector/Born weights, structural no-signaling,
+CHSH numerator `80`, deterministic local extrema, denominator-32
+Bell-local/hidden-variable exclusion, and the conditional endpoint-routing
+surface.
+
+Boundary: the v0.19.0 correctness-closure theorem layer is manuscript-level.
+It does not claim a new machine-checked theorem, Hilbert-space reconstruction,
+continuum Born-rule derivation, Tsirelson-bound derivation, experimental Bell
+violation derivation, or constructive physical mechanism for entanglement.
+
 ## v0.8.2 - manuscript source synchronized with derived dynamics spine
 
 This release finalizes the repo/manuscript synchronization pass after the

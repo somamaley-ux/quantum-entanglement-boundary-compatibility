@@ -1,30 +1,24 @@
-# Citation verification notes
+# Citation Verification - v0.19.0
 
-## External quantum-foundations references
+## External Bell and quantum-foundations sources
 
-The manuscript uses the following standard Bell-scope landmarks. Public publisher records were checked during prior build passes:
+The manuscript continues to cite the standard Bell, CHSH, no-signaling, global-section/contextuality, locality-decomposition, causal-model, and finite-dimensional entanglement literature at the relevant statements.
 
-- Einstein, Podolsky, Rosen, *Physical Review* 47 (1935), 777-780. DOI: 10.1103/PhysRev.47.777. APS DOI page located.
-- Bell, *Physics Physique Fizika* 1 (1964), 195-200. DOI: 10.1103/PhysicsPhysiqueFizika.1.195. APS DOI page located.
-- Clauser, Horne, Shimony, Holt, *Physical Review Letters* 23 (1969), 880-884. DOI: 10.1103/PhysRevLett.23.880. APS DOI page located.
-- Brunner, Cavalcanti, Pironio, Scarani, Wehner, *Reviews of Modern Physics* 86 (2014), 419-478. DOI: 10.1103/RevModPhys.86.419. APS DOI page located.
+## Imported AASC theorem spine
 
-## AASC closure-spine and co-standing support references
+The imported theorem ledger identifies the load-bearing kernel, bivalence, anchor/tensor/skin, same-scope operator, AMetric boundary, boundary-trace, and singleton-interior results with theorem identifiers, source pages, and Bell substitutions. The full source statements remain controlling at the declared dependency boundary.
 
-The manuscript uses the same closure-spine support set as the paired measurement-record paper, plus the two AMetric co-standing support sources supplied for this upgrade:
+## v0.19 proof corrections
 
-- Non-Degenerate Construction and the Kernel of Admissibility. DOI: 10.5281/zenodo.19324199.
-- Claim Standing and Legitimacy. DOI: 10.5281/zenodo.20312075.
-- Anchor, Tensor, and Skin: A Fixed-Domain Decomposition Theorem for Admissible Description. DOI: 10.5281/zenodo.18678041.
-- Closure by Exhaustion for Same-Scope Operators under Admissibility. DOI: 10.5281/zenodo.19183407.
-- Unus Solus Possibilis Est. DOI: 10.5281/zenodo.18518484.
-- The AMetric Boundary as a Unique Regime-Invariant Constraint on Admissibility-Bearing Construction. DOI: 10.5281/zenodo.18603144.
-- Boundary-Trace Fixation under Admissibility. DOI: 10.5281/zenodo.19988044.
+The completed metric-authority argument cites semantic effect exhaustion locally and the following upstream results at the exact route used:
 
-The AMetric Boundary source supports the no-selector/no-metric/no-transport boundary discipline at admission. The Boundary-Trace source supports declared, stable, bivalent, channel-preserving trace fixation without environmental-oracle or post-selection repair use.
+- AMetric no-selector closure;
+- no second same-scope invariant;
+- post-hoc repair and deferred-admissibility closure;
+- choice/selection-operator closure.
 
-Some Zenodo DOI resolver pages redirect through Zenodo pages that may not render in restricted browsing environments. The DOI strings are retained exactly as supplied and corroborated where public search records exposed them.
+No new external claim or unsupported attribution was introduced.
 
-## Companion manuscript reference
+## Lean citation boundary
 
-The measurement-record companion is cited as a companion manuscript rather than as an external published source. It is included to make the paired record/witness determinacy handoff explicit.
+The manuscript does not attribute the v0.19.0 theorem layer to Lean. The released v0.8.0 repository and DOI remain the formal sources for the finite Bell carrier and conditional endpoint bridge.

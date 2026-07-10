@@ -2,10 +2,25 @@
 
 This repo packages a bounded Lean audit surface for:
 
-`Quantum Entanglement as Boundary-Level Compatibility`
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility`
 
 The manuscript is treated as the Bell-witness sister paper to the July 10
 measurement-record determinacy snapshot.
+
+## Current Manuscript Snapshot
+
+The staged paper bundle is the supplied v0.19.0 hardened package for:
+
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility: A Kernel-Role Determinacy Theorem for Bell-Witness Fixation, No-Signaling, and Tensor-Level Compatibility`
+
+It is a manuscript-level correctness-closure snapshot. It preserves the strong
+Bell-witness endpoint while making four bounded corrections: typed act support
+is separated from support-value equality; compatibility continuation is
+restricted to the active relation; target preservation is separated from
+governance-inert skin; and metric-authority exclusion is completed through
+semantic effect exhaustion and second-invariant closure.
+
+No new Lean theorem is claimed by the v0.19.0 manuscript package.
 
 ## Lean Surface
 
@@ -135,7 +150,7 @@ The hardened manuscript source and QA notes are staged at:
 
 The staged `main.pdf` is the exact supplied July 10 target PDF from:
 
-`G:\AASC corpus may 7\Core spine\ZZZNew Work\ZSubmission versions\Target\New Entanglement\Quantum_Entanglement_as_Boundary_Level_Compatibility.pdf`
+`G:\AASC corpus may 7\Core spine\ZZZNew Work\ZSubmission versions\Target\New Entanglement\Bell_Nonlocal_Quantum_Entanglement_as_Boundary_Level_Compatibility.pdf`
 
 ## Claim Boundary
 

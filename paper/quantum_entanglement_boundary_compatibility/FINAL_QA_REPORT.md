@@ -1,67 +1,53 @@
-# Final QA report
+# Final QA Report - v0.19.0
 
-## Manuscript build
+## Result
 
-- Source: `main.tex`
-- Output: `main.pdf`
-- Pages: 32
-- Build engine: `pdflatex` via `latexmk`
-- Build status: supplied July 10 PDF artifact; source synchronized after this build
+The publication package passed source, build, PDF, presentation, and archive-integrity checks.
 
-## LaTeX checks
+## Correctness closure verified
 
-The supplied July 10 build log was checked for:
+The final source contains:
 
-- Undefined references: none found.
-- Undefined citations: none found.
-- Overfull hbox/vbox warnings: none found in final build.
-- Fatal errors: none.
+- a typed separation between `SameActSupport`, a proposition, and `ActSupp`, a value in `{A,B,AB}`;
+- one-wing support definitions requiring both endpoint support agreement and the corresponding typed value;
+- the canonical compatibility continuation relation `K_P^act` on the active carrier;
+- a corrected no-cost-free-retyping proof that leaves target-preserving proposals for downstream governance classification;
+- a governance-channel-complete metric-authority proof using semantic effect exhaustion, no-second-invariant rigidity, AMetric no-selector closure, and same-scope operator closure;
+- the unchanged strong candidate-to-certified-boundary-compatible standing-form endpoint.
+
+## LaTeX build
+
+- manuscript pages: 67
+- revision memorandum pages: 1
+- undefined references: 0
+- undefined citations: 0
+- duplicate labels: 0
+- overfull boxes: 0
+- underfull boxes: 0
+- fatal errors: 0
 
 ## PDF preflight
 
-`pdfinfo main.pdf` reports:
+Both PDFs are:
 
-- PDF opens successfully.
-- PDF is not encrypted.
-- Page count: 32.
+- openable and unencrypted;
+- text-based rather than scanned;
+- rendered without missing pages;
+- composed with embedded fonts;
+- suitable for archival and submission use.
 
-## Render QA
+## Visual inspection
 
-All 32 manuscript pages rendered to PNG. Spot checks were performed on front matter, AMetric co-standing section, no-signaling endpoint section, closure-spine and kernel-role tables, the proof spine, CHSH audit, conclusion, and appendices. No clipped text, broken glyphs, black boxes, or visible table overlap were observed in spot checks.
+All 68 delivered PDF pages were rendered and inspected. No clipping, overlap, blank pages, black boxes, broken glyphs, malformed equations, table collisions, or unstable page breaks were found.
 
 ## Presentation sweep
 
-The final sweep makes no-signaling the flagship endpoint and develops the positive determinacy structure behind correlation without communication: AMetric co-standing and boundary co-fixation. It harmonizes mechanism-role and inadmissible role-reclassification language, keeps the AASC proof-class posture non-apologetic, and removes wording that could read as draft-like or hostile. The final pass explicitly distinguishes numerical no-signaling equations from the AASC no-signaling endpoint: no same-domain signal, transport, marginal-modulation, distant-repair, or environmental-oracle typing survives.
+The manuscript and project records were checked for stale version identifiers, unresolved author notes, draft or planning language, contradictory claim boundaries, the prior act-support type error, the inactive/full continuation mismatch, and overstatement in the retyping and metric-authority proofs. No unresolved publication-facing language remains.
 
-## Package QA
+## Lean boundary
 
-The final zip was created from a single clean root directory and tested with `unzip -t`.
+No new Lean build or theorem is claimed. The released v0.8.0 Lean artifact remains controlling for the finite Bell carrier and conditional bridge. The v0.19.0 correctness-closure layer is manuscript-level.
 
-## Final precision pass
+## Archive
 
-- Added explicit `T_B` typing as Bell-scope tensor-compatibility content.
-- Clarified statistical correlation language: individual pairs are local realizations; the family of pairs carries the Bell correlation structure.
-- Clarified AMetric “before” as admissibility-priority, not temporal priority.
-- Verified final build after precision edits: no undefined references, no undefined citations, and no overfull-box warnings.
-
-## Lean synchronization pass
-
-The `main.tex` and `revision_memorandum.tex` sources were synchronized with the
-v0.8.0 derived-dynamics Lean spine. The manuscript source now explicitly names
-`reasonableDeepestFiniteEntanglement_spine` and records the finite Bell-side
-mechanized content: concrete vector geometry, vector/Born weights over
-denominator `32`, structural no-signaling, CHSH numerator `80`, all 16
-deterministic local response tables with CHSH numerator `64` or `-64`,
-denominator-32 Bell-local/hidden-variable exclusion, and the bridge to the
-boundary/no-signaling endpoint.
-
-Local PDF rebuild was not performed during this synchronization pass because no
-TeX engine (`pdflatex`, `xelatex`, `lualatex`, `latexmk`, or `tectonic`) is
-installed on PATH or in the checked standard local locations. The staged PDFs
-therefore remain the supplied July 10 compiled artifacts, while the TeX source
-is the synchronized manuscript state.
-
-The accompanying Lean repo passes `lake build MaleyLean`, the paper audit
-script, and the Lean source scan for `sorry`, `admit`, and `unsafe`. The
-deepest derived finite spine reports the standard Lean `propext` dependency in
-equality/extensionality steps.
+The final archive contains one project root, excludes LaTeX auxiliaries, logs, rendered pages, contact sheets, temporary scripts, and backup sources, includes per-file checksums, and passes ZIP integrity testing.

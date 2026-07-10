@@ -1,12 +1,12 @@
-# Quantum Entanglement as Boundary-Level Compatibility
+# Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility
 
 Standalone Lean 4 packaging and manuscript bundle for:
 
-`Quantum Entanglement as Boundary-Level Compatibility`
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility`
 
 Subtitle:
 
-`A Kernel-Role Determinacy Theorem for No-Signaling, Bell Witness Fixation, and Tensor-Level Compatibility`
+`A Kernel-Role Determinacy Theorem for Bell-Witness Fixation, No-Signaling, and Tensor-Level Compatibility`
 
 This repo contains:
 
@@ -21,8 +21,8 @@ This repo contains:
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the manuscript synchronization handoff plan in `docs/entanglement_manuscript_sync_patch_plan.md`
-- the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`, with TeX source synchronized to the derived-dynamics Lean spine
-- the exact supplied July 10 target PDF staged as `paper/quantum_entanglement_boundary_compatibility/main.pdf`
+- the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`, updated to the v0.19.0 Bell-nonlocal title and correctness-closure package
+- the exact supplied July 10 Bell-nonlocal target PDF staged as `paper/quantum_entanglement_boundary_compatibility/main.pdf`
 
 ## Build
 
@@ -38,7 +38,7 @@ powershell -ExecutionPolicy Bypass -File scripts/check-entanglement-boundary-com
 
 ## Mechanization State
 
-The strongest Lean-supported spine in this release is:
+The strongest released Lean-supported spine remains:
 
 `reasonableDeepestFiniteEntanglement_spine`
 
@@ -53,6 +53,26 @@ Current audit posture: the Lean build and paper audit pass, and the Lean source
 scan finds no `sorry`, `admit`, or `unsafe`. The deepest derived finite spine
 reports the standard Lean `propext` dependency in equality/extensionality
 steps.
+
+## Manuscript v0.19.0 State
+
+The staged manuscript package is now:
+
+`Bell-Nonlocal Quantum Entanglement as Boundary-Level Compatibility`
+
+The package identifies itself as publication manuscript v0.19.0. It adds a
+bounded correctness-closure layer at the manuscript level: typed act support,
+active compatibility continuation, substantive metric-authority closure,
+wing-complete standing-flow exclusion, target-bearing continuation uniqueness,
+rival transport exhaustion, and the candidate-to-canonical standing-form
+theorem. It keeps the strong endpoint: primitive same-target candidacy,
+together with the activated kernel and exact imported closure spine, forces
+one boundary-compatible target-bearing governance form up to target-active
+extensional governance equivalence.
+
+This v0.19.0 layer is not claimed as a new Lean theorem. The released Lean
+companion remains v0.8.0/v0.8.2 for the finite denominator-32 Bell carrier and
+conditional endpoint-routing surface.
 
 ## Claim Boundary
 
