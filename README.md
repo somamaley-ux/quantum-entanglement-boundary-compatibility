@@ -20,6 +20,7 @@ This repo contains:
 - the derived-dynamics spine in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
+- the manuscript synchronization handoff plan in `docs/entanglement_manuscript_sync_patch_plan.md`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
 - the exact supplied July 10 target PDF staged as `paper/quantum_entanglement_boundary_compatibility/main.pdf`
 

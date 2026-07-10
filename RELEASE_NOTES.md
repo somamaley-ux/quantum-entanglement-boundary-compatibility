@@ -1,5 +1,17 @@
 # Release Notes
 
+## v0.8.1 - manuscript synchronization patch plan
+
+This release adds:
+
+`docs/entanglement_manuscript_sync_patch_plan.md`
+
+The handoff plan gives a section-by-section manuscript patch strategy for
+synchronizing the paper with the v0.8.0 Lean mechanization centered on
+`reasonableDeepestFiniteEntanglement_spine`. It is a planning artifact for the
+next manuscript-source update; it does not itself replace the manuscript PDF or
+claim that the manuscript text has already been synchronized.
+
 ## v0.8.0 - derived dynamics spine
 
 This release adds:
