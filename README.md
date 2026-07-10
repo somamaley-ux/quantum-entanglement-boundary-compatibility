@@ -15,6 +15,7 @@ This repo contains:
 - the concrete finite CHSH derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/ConcreteCHSHDerivation.lean`
 - the deterministic Bell-local envelope proof in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/BellLocalBound.lean`
 - the finite singlet/Born derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
+- the finite axis-geometry profile in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -74,3 +75,8 @@ The `SingletBornDerivation` module derives the concrete table from a finite
 singlet/Born-style correlation profile. It uses scaled correlation numerators
 `+20` and `-20`, applies the two-outcome Born cell rule, and proves the derived
 weights match the concrete CHSH table exactly.
+
+The `FiniteGeometryProfile` module adds local measurement-axis labels and a
+scaled axis inner-product profile. The singlet correlation is the negative
+axis profile, and the resulting axis/Born weights are proved identical to the
+finite singlet/Born and concrete CHSH tables.

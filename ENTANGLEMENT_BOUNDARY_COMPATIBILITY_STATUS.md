@@ -72,6 +72,17 @@ It defines a finite Bell-scope singlet correlation profile with scaled
 correlation numerators `+20` and `-20`, applies the two-outcome Born cell rule,
 and proves the resulting weights match the concrete CHSH table exactly.
 
+## Finite Geometry Profile
+
+The finite geometry profile module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
+
+It adds Alice/Bob measurement-axis labels and a scaled axis inner-product
+profile. The singlet correlation is represented as the negative axis profile,
+and the induced axis/Born weights are proved identical to the finite
+singlet/Born table and the concrete CHSH table.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:

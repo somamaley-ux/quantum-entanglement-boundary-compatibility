@@ -1,5 +1,16 @@
 # Release Notes
 
+## v0.6.0 - finite axis geometry profile
+
+This update adds the finite axis-geometry layer:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
+
+The new module introduces Alice/Bob measurement-axis labels, a scaled
+inner-product profile, and the singlet rule that the correlation is the
+negative axis profile. It proves the axis/Born weights match both the finite
+singlet/Born table and the concrete CHSH table exactly.
+
 ## v0.5.0 - finite singlet Born derivation
 
 This update adds the finite singlet/Born derivation layer:
