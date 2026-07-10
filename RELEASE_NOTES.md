@@ -1,5 +1,24 @@
 # Release Notes
 
+## Unreleased - derived dynamics spine
+
+Local development after `v0.7.0` adds:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
+
+This module defines a reusable integer CHSH functional over finite Bell
+tables, proves the vector/Born table has CHSH numerator `80`, derives
+no-signaling from the structural same/opposite Born symmetry, builds
+deterministic local response tables from the 16 Alice/Bob outcome assignments,
+classifies their CHSH extremes, enumerates the normalized finite convex
+Bell-local envelope at denominator `32`, proves the vector/Born numerator is
+outside that envelope and outside denominator-32 local hidden-variable models,
+adds a general-denominator local-envelope interface, factors the concrete
+vectors through a finite vector-geometry interface, and bridges the vector/Born
+dynamics back into the boundary-compatibility and no-signaling endpoint
+surface. The named local endpoint theorem is
+`reasonableDeepestFiniteEntanglement_spine`.
+
 ## v0.7.0 - finite vector geometry realization
 
 This update adds the finite vector-geometry layer:

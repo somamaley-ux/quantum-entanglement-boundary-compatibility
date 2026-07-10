@@ -17,6 +17,7 @@ This repo contains:
 - the finite singlet/Born derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
 - the finite axis-geometry profile in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
 - the finite vector-geometry realization in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteVectorGeometry.lean`
+- the unreleased derived-dynamics spine in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -87,3 +88,17 @@ integer 2D vectors, proves Alice-axis squared norm `1` and Bob-axis squared
 norm `50`, proves the scaled vector dot products match the finite axis
 profile, and carries the vector/Born weights through to the concrete CHSH
 table.
+
+The unreleased `DerivedDynamics` module adds the current local flagship
+development layer. It defines a reusable integer CHSH functional over finite
+Bell tables, proves the vector/Born table has CHSH numerator `80`, derives
+no-signaling from the structural same/opposite Born symmetry, builds actual
+deterministic local response tables from the 16 Alice/Bob outcome assignments,
+classifies their CHSH extremes, enumerates the normalized finite convex
+Bell-local envelope at denominator `32`, proves the vector/Born numerator lies
+outside that envelope and outside denominator-32 local hidden-variable models,
+adds a general-denominator local-envelope interface, factors the concrete
+vectors through a finite vector-geometry interface, and bridges the vector/Born
+dynamics back into the boundary-compatibility and no-signaling endpoint
+surface. The named endpoint theorem
+`reasonableDeepestFiniteEntanglement_spine` bundles this finite flagship spine.

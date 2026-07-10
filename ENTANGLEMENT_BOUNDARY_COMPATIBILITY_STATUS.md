@@ -94,6 +94,34 @@ Alice-axis squared norm `1` and Bob-axis squared norm `50`, proves the scaled
 vector dot products match the finite axis profile, and derives the same
 axis/Born and concrete CHSH weights.
 
+## Derived Dynamics Spine
+
+The unreleased local derived-dynamics module is:
+
+`MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
+
+It adds a reusable integer CHSH functional over finite Bell tables, proves the
+vector/Born table has CHSH numerator `80`, proves no-signaling from the
+structural same/opposite Born symmetry rather than only from table
+enumeration, builds deterministic local response tables from the 16 Alice/Bob
+outcome assignments, classifies their CHSH extremes, enumerates the normalized
+finite convex Bell-local envelope at denominator `32`, proves the vector/Born
+numerator is outside that envelope and outside denominator-32 local
+hidden-variable models, adds a general-denominator local-envelope interface,
+factors the concrete vectors through a finite vector-geometry interface, and
+supplies vector/Born bridge definitions back into the boundary-level
+compatibility and no-signaling endpoint surface.
+
+The endpoint theorem is:
+
+`reasonableDeepestFiniteEntanglement_spine`
+
+This is the local satisfaction marker for the finite Bell-side flagship spine:
+same/opposite two-outcome symmetry, concrete vector geometry, vector/Born CHSH
+value `80`, deterministic-response local envelope, denominator-32
+hidden-variable exclusion, general local-envelope interface, and the
+boundary/no-signaling bridge.
+
 ## Paper Bundle
 
 The hardened manuscript source and QA notes are staged at:
@@ -107,7 +135,10 @@ The staged `main.pdf` is the exact supplied July 10 target PDF from:
 ## Claim Boundary
 
 This is an audit/formal-routing surface over declared structures and
-hypotheses, now including a finite operational dynamics bridge. It refines the
-public AASC kernel/admissibility story at the Bell-witness endpoint; it does
-not claim a first-principles derivation of quantum mechanics, Bell violation,
-the Born rule, or a complete constructive physical mechanism for entanglement.
+hypotheses, now including finite vector/Born dynamics, deterministic local
+response tables, a finite convex Bell-local/hidden-variable envelope
+exclusion, and a general finite-denominator envelope interface. It refines the public AASC
+kernel/admissibility story at the Bell-witness endpoint; it does not claim a
+first-principles derivation of Hilbert-space quantum mechanics, the continuum
+Born rule, experimental Bell violation, or a complete constructive physical
+mechanism for entanglement.
