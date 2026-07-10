@@ -96,7 +96,7 @@ axis/Born and concrete CHSH weights.
 
 ## Derived Dynamics Spine
 
-The unreleased local derived-dynamics module is:
+The released derived-dynamics module is:
 
 `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
 
@@ -116,7 +116,7 @@ The endpoint theorem is:
 
 `reasonableDeepestFiniteEntanglement_spine`
 
-This is the local satisfaction marker for the finite Bell-side flagship spine:
+This is the satisfaction marker for the finite Bell-side flagship spine:
 same/opposite two-outcome symmetry, concrete vector geometry, vector/Born CHSH
 value `80`, deterministic-response local envelope, denominator-32
 hidden-variable exclusion, general local-envelope interface, and the
@@ -134,10 +134,11 @@ The staged `main.pdf` is the exact supplied July 10 target PDF from:
 
 ## Claim Boundary
 
-This is an audit/formal-routing surface over declared structures and
-hypotheses, now including finite vector/Born dynamics, deterministic local
-response tables, a finite convex Bell-local/hidden-variable envelope
-exclusion, and a general finite-denominator envelope interface. It refines the public AASC
+This is a manuscript-faithful finite Bell-side mechanization over declared
+structures and hypotheses, now including finite vector/Born dynamics,
+deterministic local response tables, a finite convex
+Bell-local/hidden-variable envelope exclusion, and a general
+finite-denominator envelope interface. It refines the public AASC
 kernel/admissibility story at the Bell-witness endpoint; it does not claim a
 first-principles derivation of Hilbert-space quantum mechanics, the continuum
 Born rule, experimental Bell violation, or a complete constructive physical

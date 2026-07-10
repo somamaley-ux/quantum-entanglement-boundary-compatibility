@@ -1,8 +1,8 @@
 # Release Notes
 
-## Unreleased - derived dynamics spine
+## v0.8.0 - derived dynamics spine
 
-Local development after `v0.7.0` adds:
+This release adds:
 
 `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
 
@@ -16,7 +16,7 @@ outside that envelope and outside denominator-32 local hidden-variable models,
 adds a general-denominator local-envelope interface, factors the concrete
 vectors through a finite vector-geometry interface, and bridges the vector/Born
 dynamics back into the boundary-compatibility and no-signaling endpoint
-surface. The named local endpoint theorem is
+surface. The named endpoint theorem is
 `reasonableDeepestFiniteEntanglement_spine`.
 
 ## v0.7.0 - finite vector geometry realization

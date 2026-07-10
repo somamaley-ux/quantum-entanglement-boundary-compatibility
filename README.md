@@ -17,7 +17,7 @@ This repo contains:
 - the finite singlet/Born derivation in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/SingletBornDerivation.lean`
 - the finite axis-geometry profile in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteGeometryProfile.lean`
 - the finite vector-geometry realization in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/FiniteVectorGeometry.lean`
-- the unreleased derived-dynamics spine in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
+- the derived-dynamics spine in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/DerivedDynamics.lean`
 - the public summary surface in `MaleyLean/Papers/QuantumEntanglementBoundaryCompatibility/Surface/Summary.lean`
 - the paper-specific axiom audit in `Checks/Axiom/QuantumEntanglementBoundaryCompatibilityAxiomCheck.lean`
 - the hardened manuscript bundle under `paper/quantum_entanglement_boundary_compatibility/`
@@ -35,14 +35,28 @@ lake build MaleyLean
 powershell -ExecutionPolicy Bypass -File scripts/check-entanglement-boundary-compatibility-audit.ps1
 ```
 
+## Mechanization State
+
+The strongest Lean-supported spine in this release is:
+
+`reasonableDeepestFiniteEntanglement_spine`
+
+It bundles the finite Bell-side route from same/opposite two-outcome symmetry,
+concrete integer vector geometry, vector/Born weights, CHSH numerator `80`,
+deterministic local response tables, denominator-32 convex
+Bell-local/hidden-variable exclusion, a general finite-denominator local
+envelope interface, and the bridge back to boundary compatibility and the
+no-signaling endpoint surface.
+
 ## Claim Boundary
 
-The Lean layer is an audit/formal-routing surface over declared Bell-witness
-roles, fixed-scope hypotheses, boundary-trace fixation, tensor-compatibility
-content, AMetric co-standing, no-signaling endpoint exclusions, and a finite
-operational dynamics bridge. It does not derive Hilbert-space quantum
-mechanics, the Born rule, Bell inequalities, experimental violation, or a full
-constructive dynamics for entanglement from first principles.
+The Lean layer is a manuscript-faithful finite Bell-side mechanization over
+declared Bell-witness roles, fixed-scope hypotheses, boundary-trace fixation,
+tensor-compatibility content, AMetric co-standing, no-signaling endpoint
+exclusions, finite vector/Born dynamics, and finite Bell-local
+hidden-variable exclusion. It does not derive Hilbert-space quantum mechanics,
+the continuum Born rule, experimental Bell violation, or a full constructive
+physical mechanism for entanglement from first principles.
 
 The formalized endpoint is the manuscript-faithful Bell-side refinement:
 non-degenerate reusable Bell-witness objecthood routes through boundary-level
@@ -89,16 +103,15 @@ norm `50`, proves the scaled vector dot products match the finite axis
 profile, and carries the vector/Born weights through to the concrete CHSH
 table.
 
-The unreleased `DerivedDynamics` module adds the current local flagship
-development layer. It defines a reusable integer CHSH functional over finite
-Bell tables, proves the vector/Born table has CHSH numerator `80`, derives
-no-signaling from the structural same/opposite Born symmetry, builds actual
-deterministic local response tables from the 16 Alice/Bob outcome assignments,
-classifies their CHSH extremes, enumerates the normalized finite convex
-Bell-local envelope at denominator `32`, proves the vector/Born numerator lies
-outside that envelope and outside denominator-32 local hidden-variable models,
-adds a general-denominator local-envelope interface, factors the concrete
-vectors through a finite vector-geometry interface, and bridges the vector/Born
+The `DerivedDynamics` module is the released finite flagship spine. It defines
+a reusable integer CHSH functional over finite Bell tables, proves the
+vector/Born table has CHSH numerator `80`, derives no-signaling from the
+structural same/opposite Born symmetry, builds actual deterministic local
+response tables from the 16 Alice/Bob outcome assignments, classifies their
+CHSH extremes, enumerates the normalized finite convex Bell-local envelope at
+denominator `32`, proves the vector/Born numerator lies outside that envelope
+and outside denominator-32 local hidden-variable models, adds a
+general-denominator local-envelope interface, factors the concrete vectors
+through a finite vector-geometry interface, and bridges the vector/Born
 dynamics back into the boundary-compatibility and no-signaling endpoint
-surface. The named endpoint theorem
-`reasonableDeepestFiniteEntanglement_spine` bundles this finite flagship spine.
+surface.
